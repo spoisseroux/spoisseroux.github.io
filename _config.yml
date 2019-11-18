@@ -1,15 +1,15 @@
 # Site settings
-title: Your site
+title: Spencer Poisseroux Portfolio
 description: >
-    Your description
-author: Your name
-email: your@e.mail
+    Spencer Poisseroux Portfolio
+author: Spencer Poisseroux
+email: spoisseroux@me.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourname.github.io" # the base hostname & protocol for your site
-twitter_username: YourTwitter
-github_username:  YourGitHub
+url: "https://spoisseroux.github.io" # the base hostname & protocol for your site
+#twitter_username: YourTwitter
+github_username:  spoisseroux
 
-disqus_shortname: YourDisqusShortname
+#disqus_shortname: YourDisqusShortname
 
 # Build settings
 include: [_pages]
