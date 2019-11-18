@@ -6,7 +6,7 @@ author: Spencer Poisseroux
 email: spoisseroux@me.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spoisseroux.github.io" # the base hostname & protocol for your site
-linkedin_username: spoisseroux
+twitter_username: spoisseroux
 github_username:  spoisseroux
 
 #disqus_shortname: YourDisqusShortname
