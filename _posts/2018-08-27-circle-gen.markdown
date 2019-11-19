@@ -3,8 +3,9 @@ layout: post
 title:  "Spiral_Gen.py"
 date:   2018-07-05 19:48:12
 ---
-generative circle art used in generative art exhibition at the Deep End (brooklyn, ny)  
+generative circle art used in generative art exhibition at the deep end (brooklyn, ny)  
 piece was projected and accompanied a synth performance  
 made using python and turtle  
 [GitHub Repo](https://github.com/spoisseroux/Circle_Gen)  
+  
 <img src="https://media.giphy.com/media/cmZ26PGRwNik5GDIe8/giphy.gif"/>
