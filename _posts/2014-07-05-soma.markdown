@@ -3,4 +3,8 @@ layout: post
 title:  "Lyric Video: Soma"
 date:   2014-07-05 19:48:12
 ---
-[Lyric video for Soma - The Strokes](https://www.youtube.com/watch?v=AFKdIp6MkL0) made in Adobe After Effects.
+Lyric video for the song Soma by the Strokes made in Adobe After Effects.
+
+<video width="320" height="240" controls>
+  <source src=”https://www.youtube.com/watch?v=AFKdIp6MkL0” type=video/ogg>
+</video>
