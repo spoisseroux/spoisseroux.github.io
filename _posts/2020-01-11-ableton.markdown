@@ -7,7 +7,7 @@ date:   2020-01-11 19:48:12
     <figcaption>Listen to the audio samples:</figcaption>
     <audio
         controls
-    src="/Users/spencerlouis/Documents/Projects/GitHub/spoisseroux.github.io/local_content/song.mp3">
+        src="https://voca.ro/aEtJb4vIwIX">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
