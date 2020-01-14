@@ -8,23 +8,24 @@ permalink: /about/
 student pursuing a bachelor of science in computer science at pace university in new york, ny
 
 proficient in:
-[japanese,
-piano,
-adobe suite,
-python,
-java,
-c++,
+
+[Japanese,
+Python,
+Java,
+C++,
 HTML/CSS,
-Data Structures,
-Unreal Engine,
-maxmsp,
-logic pro x,
-ableton live 10,
-blender]
+Unreal Engine 4,
+MAXmsp,
+Ableton Live 10,
+Logic Pro X,
+Blender,
+Adobe Creative Suite,
+Piano]
+
 
 interested in:
-[generative art,
-creative coding,
-audio programming,
-code-based music creation & performance,
-virtual worlds]
+[Generative Art,
+Creative Coding,
+Audio Programming,
+Code-Based Music Composition,
+Virtual Worlds]
