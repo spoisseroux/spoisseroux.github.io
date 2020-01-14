@@ -3,8 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-![portrait](https://i.imgur.com/QnGlH7u.jpg =400x400)
-<img src="https://i.imgur.com/QnGlH7u.jpg" width="100" height="100">
+![portrait](https://i.imgur.com/QnGlH7u.jpg =100x100)
+<img src="https://i.imgur.com/QnGlH7u.jpg" width="180" height="180">
 
 student pursuing a bachelor of science in computer science at pace university in new york, ny
 
