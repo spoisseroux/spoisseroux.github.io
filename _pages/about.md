@@ -8,7 +8,6 @@ permalink: /about/
 student pursuing a bachelor of science in computer science at pace university in new york, ny
 
 proficient in:
-
 [Japanese,
 Python,
 Java,
