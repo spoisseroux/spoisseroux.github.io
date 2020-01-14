@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-![portrait]([img]https://i.imgur.com/QnGlH7u.jpg)
+![portrait](https://i.imgur.com/QnGlH7u.jpg)
 
 student pursuing a bachelor of science in computer science at pace university in new york, ny
 
