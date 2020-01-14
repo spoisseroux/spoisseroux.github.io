@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-[Imgur](https://imgur.com/QnGlH7u)
+![Imgur](https://imgur.com/QnGlH7u)
 
 student pursuing a bachelor of science in computer science at pace university in new york, ny
 
@@ -13,8 +13,10 @@ piano,
 adobe suite,
 python,
 java,
+c++,
 HTML/CSS,
 Data Structures,
+Unreal Engine,
 maxmsp,
 logic pro x,
 ableton live 10,
