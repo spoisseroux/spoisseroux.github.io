@@ -3,12 +3,12 @@
 	{% else %}
 		<script type='text/javascript'>
 			fortune = new Array(2);
-			fortune[0] = 'every drop in the ocean counts \n';
-			fortune[1] = 'controversy is a part of the nature of art \n';
-			fortune[2] = 'our cells are speaking to each other \n';
+			fortune[0] = 'every drop in the ocean counts';
+			fortune[1] = 'controversy is a part of the nature of art';
+			fortune[2] = 'our cells are speaking to each other';
 
 			index = Math.floor(Math.random() * fortune.length);
-			document.write(fortune[index]);
+			document.write(fortune[index]+"<br>");
 		</script>
 		<noscript>どうしてこうなるんだろう…</noscript>
 	{% endif %}
