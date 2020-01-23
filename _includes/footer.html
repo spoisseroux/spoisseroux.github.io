@@ -1,7 +1,8 @@
 <footer class="c-page__footer">
 	</hr>
 	<p>{% include fortune.html %}</p>
-	</br></br></br></br></br></br>
+	<p></p>
+	<br />
 	{% if page.layout != 'amp' %}
 	</hr></br>
 	{% endif %}
@@ -9,5 +10,5 @@
 	{% if page.layout != 'amp' %}
 	</br>
 	{% endif %}
-	<p>Follow mel on: {% if site.twitter_username %}<a href="https://linkedin.com/in/{{ site.twitter_username }}">LinkedIn</a>{% endif %}{% if site.twitter_username %}{% if site.github_username %} & {% endif %}{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}<span class="u-separate"></span> Subscribe: <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+	<p>Follow mek on: {% if site.twitter_username %}<a href="https://linkedin.com/in/{{ site.twitter_username }}">LinkedIn</a>{% endif %}{% if site.twitter_username %}{% if site.github_username %} & {% endif %}{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}<span class="u-separate"></span> Subscribe: <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
 </footer>
