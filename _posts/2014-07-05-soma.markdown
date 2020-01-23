@@ -3,6 +3,7 @@ layout: post
 title:  "AE motion graphics"
 date:   2014-07-05 19:48:12
 ---
+each gif is a link to full video
 **a lyric video made in adobe after effects**
 
 [![soma lyric video](https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif)](https://www.youtube.com/watch?v=_UGfUzKrPuY)
@@ -10,9 +11,9 @@ date:   2014-07-05 19:48:12
 
 **text motion graphic sample in after effects**
 
-[![text motion graphic](https://img.youtube.com/vi/2aL8CkJbELo/0.jpg)](https://www.youtube.com/watch?v=2aL8CkJbELo)
+[![text motion graphic](https://media.giphy.com/media/MDgaBA4y9l96oJ8gEK/giphy.gif)](https://www.youtube.com/watch?v=2aL8CkJbELo)
 -----------------------------------------------------------
 
 **stream intermission graphic in after effects**
 
-[![intermission graphic](https://img.youtube.com/vi/peOBiAp4-zQ/0.jpg)](https://www.youtube.com/watch?v=peOBiAp4-zQ)
+[![intermission graphic](https://media.giphy.com/media/LoTbQRm7c8PajWiFGC/giphy.gif)](https://www.youtube.com/watch?v=peOBiAp4-zQ)
