@@ -20,7 +20,7 @@ Java,
 C++,
 HTML/CSS,
 Unreal Engine 4,
-Unity
+Unity,
 MAXmsp,
 Ableton Live 10,
 Logic Pro X,
