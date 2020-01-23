@@ -23,6 +23,8 @@ gems:
   - jekyll-sitemap
 # - amp-jekyll # Acceletrated Mobile Pages
 
+remote_theme: pmarsceill/just-the-docs
+
 # AMP Settings
 # ampdir: amp/
 # enable_amp: true
