@@ -5,7 +5,7 @@ permalink: /about/
 ---
 <center><img src="https://i.imgur.com/QnGlH7u.jpg" width="180" height="180"></center>
 
-student pursuing a bachelor of science in computer science at pace university in new york, ny
+**student pursuing a bachelor of science in computer science at pace university in new york, ny**
 
 **currently working on:**
 [Unity, 
