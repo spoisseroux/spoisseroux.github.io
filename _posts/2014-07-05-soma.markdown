@@ -4,6 +4,7 @@ title:  "AE motion graphics"
 date:   2014-07-05 19:48:12
 ---
 each gif is a link to full video
+
 **a lyric video made in adobe after effects**
 
 [![soma lyric video](https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif)](https://www.youtube.com/watch?v=_UGfUzKrPuY)
