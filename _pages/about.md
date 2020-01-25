@@ -17,10 +17,11 @@ Film Photography]
 [Japanese,
 Python,
 Java,
+C#,
 C++,
 HTML/CSS,
-Unreal Engine 4,
 Unity,
+Unreal Engine,
 MAXmsp,
 Ableton Live 10,
 Logic Pro X,
@@ -30,8 +31,8 @@ Piano]
 
 
 **interested in:**
-[Generative Art,
-Creative Coding,
+[Creative Coding,
 Audio Programming,
-Code-Based Music Composition,
-Virtual Worlds]
+Music Composition,
+Virtual Worlds,
+Game Development]
