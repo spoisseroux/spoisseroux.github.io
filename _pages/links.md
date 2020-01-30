@@ -11,4 +11,4 @@ permalink: /links/
 
 <img src="https://i.imgur.com/DUqa8iG.png">
 
-<a href="/local_content/SpencerPoisseroux_Resume.pdf" download>[Download Resume]</a>
+<a href="file:////Users/spencerlouis/Documents/Projects/GitHub/spoisseroux.github.io/local_content/SpencerPoisseroux_Resume.pdf" download>[Download Resume]</a>
