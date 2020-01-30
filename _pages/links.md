@@ -8,4 +8,4 @@ permalink: /links/
 [GitHub](https://github.com/spoisseroux),
 [Youtube](https://www.youtube.com/channel/UCgzqb_bTHOhvhNF4x8vpCIw?view_as=subscriber)]
 
-<center><img src="https://i.imgur.com/pdWTChX.png"></center>
+<img src="https://i.imgur.com/pdWTChX.png">

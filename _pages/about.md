@@ -3,9 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-<center><img src="https://i.imgur.com/QnGlH7u.jpg" width="180" height="180"></center>
+<img src="https://i.imgur.com/QnGlH7u.jpg" width="180" height="180">
 
-**student pursuing a bachelor of science in computer science at pace university in new york, ny**
+**student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny**
 
 **currently working on:**
 [Unity, 
