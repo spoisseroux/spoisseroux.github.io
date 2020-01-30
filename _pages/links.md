@@ -5,9 +5,10 @@ permalink: /links/
 ---
 <a href="https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf" download="SpencerPoisseroux"><img src="https://i.imgur.com/DUqa8iG.png" /></a>
 
-[[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
+<!-- [[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
 [HackerRank](https://www.hackerrank.com/sp96651n),
 [GitHub](https://github.com/spoisseroux),
-[Youtube](https://www.youtube.com/channel/UCgzqb_bTHOhvhNF4x8vpCIw?view_as=subscriber)]
+[Youtube](https://www.youtube.com/channel/UCgzqb_bTHOhvhNF4x8vpCIw?view_as=subscriber)] 
+-->
 
-click on resume to download
+please click on resume to download
