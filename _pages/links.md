@@ -8,4 +8,6 @@ permalink: /links/
 [GitHub](https://github.com/spoisseroux),
 [Youtube](https://www.youtube.com/channel/UCgzqb_bTHOhvhNF4x8vpCIw?view_as=subscriber)]
 
+click on resume to download
+
 <a href="https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf" download="SpencerPoisseroux"><img src="https://i.imgur.com/DUqa8iG.png" /></a>
