@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-permalink: /resume/
+permalink: /links/
 ---
 [[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
 [HackerRank](https://www.hackerrank.com/sp96651n),
