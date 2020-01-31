@@ -10,8 +10,7 @@ permalink: /about/
 **currently working on:**
 [Unity, 
 Processing,
-Blender,
-Film Photography]
+Cinema 4D]
 
 **proficient in:**
 [Japanese,
