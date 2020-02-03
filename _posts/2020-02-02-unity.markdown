@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "3D Statue Puzzle unity game"
+date:   2020-02-02 19:48:12
+---
+in this unity game players control the camera with "a" and "d" keys and use the given perspective drag each piece into its respective place and complete the statue. there are 3 levels. this game was made for global game jam 2020.
+
+<img src="https://media.giphy.com/media/JonfJkywAel5uG0PGi/giphy.gif"/>
+
+<img src="https://media.giphy.com/media/UqkgNMlXCEjG4Q5rJK/giphy.gif"/>
+
+<img src="https://media.giphy.com/media/llTrSHsONZOrtT8wq0/giphy.gif"/>
+
+[GitHub Repo](https://github.com/spoisseroux/GameJam2020)  
+
+
