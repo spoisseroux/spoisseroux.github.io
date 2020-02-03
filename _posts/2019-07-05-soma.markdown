@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AE motion graphics"
-date:   2014-07-05 19:48:12
+date:   2019-07-05 19:48:12
 ---
 each gif is a link to full video
 
@@ -10,9 +10,22 @@ each gif is a link to full video
 [![soma lyric video](https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif)](https://www.youtube.com/watch?v=_UGfUzKrPuY)
 -----------------------------------------------------------
 
-**text motion graphic sample in after effects**
+**text mograph**
 
 [![text motion graphic](https://media.giphy.com/media/MDgaBA4y9l96oJ8gEK/giphy.gif)](https://www.youtube.com/watch?v=2aL8CkJbELo)
+
+-----------------------------------------------------------
+
+**color flow**
+
+[![color mograph](https://giphy.com/embed/ky91pekO1D6n775dk0/giphy.gif)](https://www.youtube.com/watch?v=cYTb2Ktv4xY)
+
+-----------------------------------------------------------
+
+**hooks**
+
+[![hooks](https://giphy.com/embed/RfSGSNS1Guyo2AYnqj/giphy.gif)](https://www.youtube.com/watch?v=Lb1eHd3ERcc)
+
 -----------------------------------------------------------
 
 **stream intermission graphic in after effects**
