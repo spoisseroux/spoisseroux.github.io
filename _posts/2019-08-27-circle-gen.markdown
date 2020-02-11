@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spiral_gen.py"
+title:  "[Python] Spiral_gen.py"
 date:   2019-08-27 19:48:12
 ---
 generative circle art used in generative art exhibition at the deep end (brooklyn, ny)  

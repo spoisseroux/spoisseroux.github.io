@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tokyo photo series"
+title:  "[Photo] Tokyo series"
 date:   2019-12-23 19:48:12
 ---
 revisting memories from 2014

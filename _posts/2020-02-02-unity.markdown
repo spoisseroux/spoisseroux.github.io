@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D Statue Puzzle unity game"
+title:  "[Unity] 3D statue puzzle"
 date:   2020-02-02 19:48:12
 ---
 in this unity game players control the camera with "a" and "d" keys and use the given perspective drag each piece into its respective place and complete the statue. 
