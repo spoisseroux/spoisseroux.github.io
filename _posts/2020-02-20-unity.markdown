@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "[Processing] Sketches"
+date:   2020-02-20 19:48:12
+---
+
+**Location**
+[![randome_nude](https://github.com/spoisseroux/Processing3/blob/master/random_nude/images/random_nude1%20copy.jpg)](https://github.com/spoisseroux/Processing3/blob/master/random_nude/random_nude.pde)
