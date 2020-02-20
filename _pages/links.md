@@ -3,7 +3,7 @@ layout: page
 title: Resume
 permalink: /links/
 ---
-<a href="https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf" download="SpencerPoisseroux"><img src="https://i.imgur.com/DUqa8iG.png" /></a>
+<a href="https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf" download="SpencerPoisseroux"><img src="https://i.imgur.com/esivtmV.png" /></a>
 
 <!-- [[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
 [HackerRank](https://www.hackerrank.com/sp96651n),
