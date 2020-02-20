@@ -9,6 +9,9 @@ date:   2020-02-20 19:48:12
 [![random_bool](https://media.giphy.com/media/mA7PD2DnLkPsVAQOCS/giphy.gif)](https://github.com/spoisseroux/Processing3/blob/master/bool_grid/bool_grid.pde)
 
 
+[![triangle_burst](https://media.giphy.com/media/LmkmTDsyrOER2dtLXS/giphy.gif)](https://github.com/spoisseroux/Processing3/blob/master/triangle_mouse_burst/triangle_mouse_burst.pde)
+
+
 [![random_height](https://media.giphy.com/media/f9r0OhIVkZqOkoNrQc/giphy.gif)](https://github.com/spoisseroux/Processing3/blob/master/random_height/random_height.pde)
 
 
