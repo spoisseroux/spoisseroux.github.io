@@ -10,17 +10,20 @@ permalink: /about/
 **currently working on:**
 [Unity, 
 Processing,
-Cinema 4D]
+Cinema 4D, 
+Computer Organization]
 
 **proficient in:**
 [Japanese,
 Python,
 Java,
+C,
+Assembly
 C#,
 C++,
 HTML/CSS,
 Unity,
-Unreal Engine,
+Unreal,
 MAXmsp,
 Ableton Live 10,
 Logic Pro X,
