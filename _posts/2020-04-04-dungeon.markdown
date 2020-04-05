@@ -6,7 +6,7 @@ date:   2020-04-04 19:48:12
 
 **a 2D dungeon crawler made in unity!**
 
-this games main premise to navigate through procedurally generated dungeons and avoid being hit by enemies, being careful not to die as you also lose 1 health every move.
+this games main premise to navigate through procedurally generated dungeons and avoid being hit by enemies, being careful not to die as you also lose 1 health every move
 
 players can control the character using the arrow keys
 
@@ -16,9 +16,9 @@ click the gif below to play on itch.io
 
 **Tips**
 - on my browser i have to click in the viewport to hear audio
-- you can break through rock by hitting them 3 times
+- you can break through rocks by hitting them 3 times
 - potions heal 20 health
-- heart heal 10 health
+- hearts heal 10 health
 
 [GitHub Repo](https://github.com/spoisseroux/dungeoncrawler)  
 
