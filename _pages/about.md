@@ -17,8 +17,8 @@ Computer Organization]
 [Japanese,
 Python,
 Java,
+Assembly,
 C,
-Assembly
 C#,
 C++,
 HTML/CSS,
