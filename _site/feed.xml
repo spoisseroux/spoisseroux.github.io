@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spencer Poisseroux</title>
+    <description>Spencer Poisseroux
+</description>
+    <link>https://spoisseroux.github.io/</link>
+    <atom:link href="https://spoisseroux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Apr 2020 16:53:14 -0400</pubDate>
+    <lastBuildDate>Wed, 08 Apr 2020 16:53:14 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>[Unity] Dungeon crawler</title>
+        <description>&lt;p&gt;&lt;strong&gt;a 2D dungeon crawler made in unity!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;this games main premise to navigate through procedurally generated dungeons and avoid being hit by enemies, being careful not to die as you also lose 1 health every move&lt;/p&gt;
+
+&lt;p&gt;players can control the character using the arrow keys&lt;/p&gt;
+
+&lt;p&gt;click the gif below to play on itch.io&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://keehar.itch.io/dungeon&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LM87qYjYlr9203XDjR/giphy.gif&quot; alt=&quot;game&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;on my browser i have to click in the viewport to hear audio&lt;/li&gt;
+  &lt;li&gt;you can break through rocks by hitting them 3 times&lt;/li&gt;
+  &lt;li&gt;potions heal 20 health&lt;/li&gt;
+  &lt;li&gt;hearts heal 10 health&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/dungeoncrawler&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 04 Apr 2020 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2020/04/dungeon</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/04/dungeon</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Processing] Sketches</title>
+        <description>&lt;p&gt;&lt;strong&gt;click any gif to see code on github&lt;/strong&gt;
+&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/static_project/static_project.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/RGkeHCPdHu3ff9blvF/giphy.gif&quot; alt=&quot;static_project&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/repetition/repetition.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/huyHQO8DjK8k6pjZUc/giphy.gif&quot; alt=&quot;repetition&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/triangle_mouse_burst/triangle_mouse_burst.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LmkmTDsyrOER2dtLXS/giphy.gif&quot; alt=&quot;triangle_burst&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/bool_grid/bool_grid.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/mA7PD2DnLkPsVAQOCS/giphy.gif&quot; alt=&quot;random_bool&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/random_nude/random_nude.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/XD3vsEiZY7s4CkOiF6/giphy.gif&quot; alt=&quot;random_portrait&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/random_height/random_height.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/f9r0OhIVkZqOkoNrQc/giphy.gif&quot; alt=&quot;random_height&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Feb 2020 14:48:12 -0500</pubDate>
+        <link>https://spoisseroux.github.io/2020/02/processing</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/02/processing</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Unity] 3D statue puzzle</title>
+        <description>&lt;p&gt;in this unity game players control the camera with “a” and “d” keys and use the given perspective drag each piece into its respective place and complete the statue. 
+there are 3 levels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/JonfJkywAel5uG0PGi/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/UqkgNMlXCEjG4Q5rJK/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/llTrSHsONZOrtT8wq0/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;this game was made for global game jam 2020.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/GameJam2020&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 02 Feb 2020 14:48:12 -0500</pubDate>
+        <link>https://spoisseroux.github.io/2020/02/unity</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/02/unity</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Photo] Tokyo series</title>
+        <description>&lt;p&gt;revisting memories from 2014&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Wzhj81l.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FuqqUuc.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RJXcNJY.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/M9WkOaz.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kc370ZY.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yxxNr1u.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hm3ZB27.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/NzKYWE5.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Dec 2019 14:48:12 -0500</pubDate>
+        <link>https://spoisseroux.github.io/2019/12/tokyo</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2019/12/tokyo</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[React] Event planning app</title>
+        <description>&lt;p&gt;EVNT is an event planning app made in react native&lt;/p&gt;
+
+&lt;p&gt;Users can:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;create an account&lt;/li&gt;
+  &lt;li&gt;sign in&lt;/li&gt;
+  &lt;li&gt;see events&lt;/li&gt;
+  &lt;li&gt;see other users who are going to events&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;EVNT features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dynamic animations&lt;/li&gt;
+  &lt;li&gt;firebase integration&lt;/li&gt;
+  &lt;li&gt;contemporary layout&lt;/li&gt;
+  &lt;li&gt;responsive UI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/evnt&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/dv6OdKb9Xic5VuAnyr/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;//.gif needs to be updated to reflect firebase integration&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Oct 2019 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2019/10/evnt</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2019/10/evnt</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Python] Spiral_gen.py</title>
+        <description>&lt;p&gt;generative circle art used in generative art exhibition at the deep end (brooklyn, ny)&lt;br /&gt;
+piece was projected and accompanied a synth performance&lt;br /&gt;
+made using python and turtle&lt;br /&gt;
+&lt;a href=&quot;https://github.com/spoisseroux/Circle_Gen&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/cmZ26PGRwNik5GDIe8/giphy.gif&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Aug 2019 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2019/08/circle-gen</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2019/08/circle-gen</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[AE] Motion graphics</title>
+        <description>&lt;p&gt;each gif is a link to full video&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;a lyric video made in adobe after effects&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_UGfUzKrPuY&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif&quot; alt=&quot;soma lyric video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;text mograph&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2aL8CkJbELo&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/MDgaBA4y9l96oJ8gEK/giphy.gif&quot; alt=&quot;text motion graphic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;color flow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cYTb2Ktv4xY&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/ky91pekO1D6n775dk0/giphy.gif&quot; alt=&quot;color mograph&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;hooks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Lb1eHd3ERcc&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/RfSGSNS1Guyo2AYnqj/giphy.gif&quot; alt=&quot;hooks&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;stream intermission graphic in after effects&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=peOBiAp4-zQ&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LoTbQRm7c8PajWiFGC/giphy.gif&quot; alt=&quot;intermission graphic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Jul 2019 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2019/07/soma</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2019/07/soma</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
