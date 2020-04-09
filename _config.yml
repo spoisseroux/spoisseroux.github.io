@@ -21,7 +21,13 @@ sass:
 plugins:
   - jemoji
   - jekyll-sitemap
+  - jekyll-analytics
 # - amp-jekyll # Acceletrated Mobile Pages
+
+jekyll_analytics:
+    GoogleAnalytics:
+        id: UA-154246167-1
+        anonymizeIp: false
 
 # AMP Settings
 # ampdir: amp/
