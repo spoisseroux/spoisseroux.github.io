@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "[Processing3] Grimes music video"
+date:   2020-04-27 19:48:12
+---
+**Work In Progress!**
+raw video edited in AE, ran through original processing script that extrudes pixels in 3D space based on brightness value and amplitude of sound. 
+ran on an old macbook pro, so please excuse the quality
+
+-----------------------------------------------------------
+
+**click the gif to watch on youtube**
+
+[![grimes music video](https://media.giphy.com/media/lS14FisvJilY6ybNSm/giphy.gif)](https://www.youtube.com/watch?v=HuRiFiWEELE)
+
+
