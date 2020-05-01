@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "[Processing3] Video extrude & destroy"
+date:   2020-04-27 19:48:12
+---
+**Work In Progress!**
+raw video edited in AE, ran through original processing script that extrudes pixels in 3D space based on brightness value and amplitude of sound (also adjusts rotation in space)
+
+-----------------------------------------------------------
+
+**click each gif to watch**
+
+enter the void - intro
+
+[![enter the void intro](https://media.giphy.com/media/jrze5RPRJURXr1ykXP/giphy.gif)](https://www.youtube.com/watch?v=nst0XyKRUMw)
+
+arca - nonbinary
+
+[![arca nonbinary](https://media.giphy.com/media/QU3vJCkOhHsS1PGEP8/giphy.gif)](https://drive.google.com/file/d/1edxL-pxUCudPsfyRut9MIpbtFA8uwXZr/view?usp=sharing)
+
+aphex twin - collapse
+
+[![aphex collapse](https://media.giphy.com/media/JTDr8W0wPKdO5ouxXb/giphy.gif)](https://drive.google.com/file/d/1utxN5aNchY8-P_R1tIcRUh0YATGBZxKe/view?usp=sharing)
+
+grimes - youll miss me when im not around
+
+[![grimes music video](https://media.giphy.com/media/ZZeHypJ1Sjq3ehFNLc/giphy.gif)](https://www.youtube.com/watch?v=T_JJTvsgCSU)
+
+-----------------------------------------------------------
+
+**alternate stills**
+
+<img src="https://i.imgur.com/fNyTLoe.png">
+
+<img src="https://i.imgur.com/88mXP1T.png">
+
+<img src="https://i.imgur.com/0aYs3uD.png">
+
