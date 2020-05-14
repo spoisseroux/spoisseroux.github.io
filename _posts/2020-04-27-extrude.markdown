@@ -1,40 +1,33 @@
 ---
 layout: post
-title:  "[Processing3] Video extrude & destroy"
+title:  "[Processing3] Pixel extrude, video destroy"
 date:   2020-04-27 19:48:12
 ---
-**Work In Progress!**
-raw video edited in AE, ran through original processing script that extrudes pixels in 3D space based on brightness value and amplitude of sound (also adjusts rotation in space)
+
+original processing3 script that extrudes pixels in 3d space based on the value of brightness, and adjusts rotation based on amplitude of audio
+
+inspired by refik andols 'data simulations', alvin luciers 'i am sitting in a room'
 
 -----------------------------------------------------------
 
-**click each gif to watch**
+**click gif to watch**
 
-enter the void - intro
+gaspar noe - enter the void [credits intro]
 
-[![enter the void intro](https://media.giphy.com/media/jrze5RPRJURXr1ykXP/giphy.gif)](https://www.youtube.com/watch?v=nst0XyKRUMw)
+[![enter the void intro](https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif)](https://youtu.be/D_T1RgiC2uE?t=65)
 
-arca - nonbinary
-
-[![arca nonbinary](https://media.giphy.com/media/QU3vJCkOhHsS1PGEP8/giphy.gif)](https://drive.google.com/file/d/1edxL-pxUCudPsfyRut9MIpbtFA8uwXZr/view?usp=sharing)
-
-aphex twin - collapse
-
-[![aphex collapse](https://media.giphy.com/media/JTDr8W0wPKdO5ouxXb/giphy.gif)](https://drive.google.com/file/d/1utxN5aNchY8-P_R1tIcRUh0YATGBZxKe/view?usp=sharing)
-
-grimes - youll miss me when im not around
-
-[![grimes music video](https://media.giphy.com/media/ZZeHypJ1Sjq3ehFNLc/giphy.gif)](https://www.youtube.com/watch?v=T_JJTvsgCSU)
 
 -----------------------------------------------------------
 
-**alternate stills**
+**outtakes**
+
+<img src="https://media.giphy.com/media/jrze5RPRJURXr1ykXP/giphy.gif">
+
+<img src="https://media.giphy.com/media/ZZeHypJ1Sjq3ehFNLc/giphy.gif">
 
 <img src="https://i.imgur.com/6mG6uro.png">
 
 <img src="https://i.imgur.com/fNyTLoe.png">
 
-<img src="https://i.imgur.com/88mXP1T.png">
-
-<img src="https://i.imgur.com/0aYs3uD.png">
+<img src="https://i.imgur.com/H53Zifc.png">
 
