@@ -6,7 +6,7 @@ date:   2020-04-12 19:48:12
 
 **house and robot modeled by me in cinema4d** // 
 **environment created in unity with standard assets, probuilder** // 
-**somefurnishings from unity asset store** // **textures from textures.com**
+**furnishings from unity asset store** // **textures from textures.com**
 
 click gifs to see video
 
