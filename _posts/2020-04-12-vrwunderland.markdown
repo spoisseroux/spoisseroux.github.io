@@ -4,11 +4,9 @@ title:  "[Unity] VR environment"
 date:   2020-04-12 19:48:12
 ---
 
-**house modeled by me in cinema4d based on louis penfield house**
-
-**robot modeled by me in cinema4d**
-
-**furnishings from unity asset store**
+house modeled by me in cinema4d based on louis penfield house\
+robot modeled by me in cinema4d\
+furnishings from unity asset store\
 
 click gifs to see video
 
