@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Unity/C4D] VR World"
+title:  "[Unity/C4D] VR world"
 date:   2020-04-12 19:48:12
 ---
 
