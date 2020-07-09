@@ -6,9 +6,93 @@
 </description>
     <link>https://spoisseroux.github.io/</link>
     <atom:link href="https://spoisseroux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Apr 2020 18:12:50 -0400</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2020 18:12:50 -0400</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Wed, 08 Jul 2020 22:15:07 -0400</pubDate>
+    <lastBuildDate>Wed, 08 Jul 2020 22:15:07 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>[Javascript] Webpage customizer</title>
+        <description>&lt;p&gt;Chrome extension created with Javascript to allow simple customization of all webpages visited. This includes toggling dark modes, adding background images, changing background colors, and the amount of divs to be affects in doing so.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;click gif to watch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Project introduction video&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/fJ07ENn_Xe4&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/Iazt0OtkTnh1XWPl2N/giphy.gif&quot; alt=&quot;ChromeExt Video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/alexalrobinson/chrome-ext&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Mon, 15 Jun 2020 15:48:11 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2020/06/chromeext</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/06/chromeext</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Processing3] Pixel extrude, video destroy</title>
+        <description>&lt;p&gt;original processing3 script that extrudes pixels in 3d space based on the value of brightness, and adjusts rotation based on amplitude of audio&lt;/p&gt;
+
+&lt;p&gt;inspired by refik andols ‘data simulations’, alvin luciers ‘i am sitting in a room’&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;click gif to watch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;gaspar noe - enter the void [credits intro]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/D_T1RgiC2uE?t=65&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif&quot; alt=&quot;enter the void intro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;outtakes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/jrze5RPRJURXr1ykXP/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/ZZeHypJ1Sjq3ehFNLc/giphy.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6mG6uro.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/fNyTLoe.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/H53Zifc.png&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Apr 2020 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2020/04/extrude</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/04/extrude</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Unity/C4D] VR World</title>
+        <description>&lt;p&gt;&lt;strong&gt;house and robot modeled by me in cinema4d&lt;/strong&gt; // 
+&lt;strong&gt;environment created in unity with standard assets, probuilder&lt;/strong&gt; // 
+&lt;strong&gt;furnishings from unity asset store&lt;/strong&gt; // &lt;strong&gt;textures from textures.com&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;click gifs to see video&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/gjBvGZVmNd3nGxPRNM/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/hqg1slhQUayOAtejGf/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/YN2Tf2hmZmqocRFaME/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 12 Apr 2020 15:48:12 -0400</pubDate>
+        <link>https://spoisseroux.github.io/2020/04/vrwunderland</link>
+        <guid isPermaLink="true">https://spoisseroux.github.io/2020/04/vrwunderland</guid>
+        
+        
+      </item>
     
       <item>
         <title>[Unity] Dungeon crawler</title>
@@ -41,7 +125,7 @@
       </item>
     
       <item>
-        <title>[Processing] Sketches</title>
+        <title>[Processing3] Sketches</title>
         <description>&lt;p&gt;&lt;strong&gt;click any gif to see code on github&lt;/strong&gt;
 &lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/static_project/static_project.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/RGkeHCPdHu3ff9blvF/giphy.gif&quot; alt=&quot;static_project&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/repetition/repetition.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/huyHQO8DjK8k6pjZUc/giphy.gif&quot; alt=&quot;repetition&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
