@@ -1,27 +1,24 @@
-
+---
+# Main scss file
+---
 @charset "UTF-8";
 
 // Helpers
-@import
-    'helpers/mixins',
-    'helpers/variables';
+@import "helpers/mixins";
+@import "helpers/variables";
 
 // Base
-@import
-    'base/reset';
+@import "base/reset";
 
 // Utilities
-@import
-    'utilities/layout',
-    'utilities/separator';
+@import "utilities/layout";
+@import "utilities/separator";
 
 // Components
-@import
-    'components/page',
-    'components/article',
-    'components/tag',
-    'components/archives';
+@import "components/page";
+@import "components/article";
+@import "components/tag";
+@import "components/archives";
 
 // Vendor
-@import
-    'vendor/highlight';
+@import "vendor/highlight";
