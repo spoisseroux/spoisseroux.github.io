@@ -9,9 +9,9 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-1 minute video collage
+**one minute video collage**
 
-[![video collage](https://giphy.com/embed/TLCWrI3T1CUCgeCEQN)](https://youtu.be/cw_o9cyiajI)
+[![video collage](https://media.giphy.com/media/TLCWrI3T1CUCgeCEQN/giphy.gif)](https://youtu.be/cw_o9cyiajI)
 
 click image to watch video
 
