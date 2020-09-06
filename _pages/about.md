@@ -7,21 +7,24 @@ permalink: /about/
 
 **student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny**
 
-**currently working on:**
-[Unity, 
-Processing,
-Cinema 4D, 
-Computer Organization]
+**currently enrolled:**
+[Programming Languages and Implementation, 
+Operating Systems and Architecture,
+Digital Design II, 
+Video I]
 
 **proficient in:**
-[Japanese,
-Python,
+[Python,
 Java,
-Assembly,
 C,
 C#,
 C++,
+SQL,
+Javascript,
 HTML/CSS,
+Processing3,
+Assembly x86,
+Computer Organization,
 Unity,
 Unreal,
 MAXmsp,
@@ -29,7 +32,7 @@ Ableton Live 10,
 Logic Pro X,
 Blender,
 Adobe Creative Suite,
-Piano]
+Japanese]
 
 
 **interested in:**
@@ -37,4 +40,5 @@ Piano]
 Audio Programming,
 Music Composition,
 Virtual Worlds,
-Game Development]
+Game Development,
+Digital & Code based Art]
