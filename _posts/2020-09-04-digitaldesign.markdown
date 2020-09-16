@@ -15,9 +15,7 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-**virtuality moods**
-
-<img src="https://i.imgur.com/pLGLJNM.png">
+**virtuality mb**
 
 <img src="https://i.imgur.com/d3ejaDz.png">
 
