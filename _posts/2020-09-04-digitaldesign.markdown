@@ -9,9 +9,15 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-**collage of fifty elements**
+**fifty elements**
 
 <img src="https://i.imgur.com/bUeaZJ7.jpg">
+
+-----------------------------------------------------------
+
+**virtuality mb1**
+
+<img src="https://i.imgur.com/pLGLJNM.png">
 
 -----------------------------------------------------------
 
