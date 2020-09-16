@@ -19,7 +19,7 @@ I will be updating this page as I complete more work throughout the semester.
 
 <img src="https://i.imgur.com/pLGLJNM.png">
 
-<img src="https://i.imgur.com/Qg8VrGl.png">
+<img src="https://i.imgur.com/d3ejaDz.png">
 
 -----------------------------------------------------------
 
