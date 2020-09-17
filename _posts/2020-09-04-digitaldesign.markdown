@@ -17,7 +17,7 @@ I will be updating this page as I complete more work throughout the semester.
 
 **virtuality mb**
 
-<img src="https://i.imgur.com/d3ejaDz.png">
+<img src="https://i.imgur.com/hpVkOoL.png">
 
 -----------------------------------------------------------
 
