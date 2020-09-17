@@ -15,9 +15,10 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-**virtuality mb**
+**virtuality mbs**
 
 <img src="https://i.imgur.com/hpVkOoL.png">
+<img src="https://i.imgur.com/Qr4gwbq.png">
 
 -----------------------------------------------------------
 
