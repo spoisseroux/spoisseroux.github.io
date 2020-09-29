@@ -12,7 +12,7 @@ I will be updating this page as I complete more work throughout the semester.
 **fifty elements**
 
 <p align="center">
-    <img src="https://i.imgur.com/bUeaZJ7.jpg" width="500" >
+    <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 </p>
 
 -----------------------------------------------------------
