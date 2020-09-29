@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "[Premiere] Video works"
+title:  "[Premiere] Video works -indev-"
 date:   2020-09-05 19:48:10
 ---
-**--under development--**
 
 I will be updating this page as I complete more work throughout the semester.
 
