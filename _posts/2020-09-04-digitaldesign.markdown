@@ -15,6 +15,8 @@ I will be updating this page as I complete more work throughout the semester.
     <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 </p>
 
+[view image](https://i.imgur.com/bUeaZJ7.jpg)  
+
 -----------------------------------------------------------
 
 **virtuality 1 3 2**
