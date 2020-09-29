@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Photoshop] Digital Works -indev-"
+title:  "[Photoshop] Digital design -indev-"
 date:   2020-09-04 19:48:10
 ---
 
