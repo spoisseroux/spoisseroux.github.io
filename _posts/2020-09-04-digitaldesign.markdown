@@ -11,7 +11,9 @@ I will be updating this page as I complete more work throughout the semester.
 
 **fifty elements**
 
-<img src="https://i.imgur.com/bUeaZJ7.jpg" align="middle" width="500" >
+<p align="center">
+    <img src="https://i.imgur.com/bUeaZJ7.jpg" width="500" >
+</p>
 
 -----------------------------------------------------------
 
