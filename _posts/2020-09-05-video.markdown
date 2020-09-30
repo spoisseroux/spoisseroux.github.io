@@ -8,11 +8,21 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-**one minute video collage**
+**clip montage**
 
 [![video collage](https://media.giphy.com/media/TLCWrI3T1CUCgeCEQN/giphy.gif)](https://youtu.be/cw_o9cyiajI)
 
-click gif to watch video
+[[watch]](https://youtu.be/cw_o9cyiajI)
+
+a montage of about one minute using clips of only one or a few seconds each; presented without sound
 
 -----------------------------------------------------------
 
+**clip montage + sound**
+
+[![video sound](https://media.giphy.com/media/gvU8Ar4BzPIPWMVmj7/giphy.gif)](https://youtu.be/yPYwfvQJttg)
+
+[[watch]](https://youtu.be/yPYwfvQJttg)
+
+reworked the sound of the montage using no audio from the original videos and using only found sounds
+explored topics of foley and demonstration through sound
