@@ -10,23 +10,19 @@ inspired by refik andols 'data simulations', alvin luciers 'i am sitting in a ro
 
 -----------------------------------------------------------
 
-gaspar noe - enter the void [credits intro]
+**gaspar noe - enter the void [credits intro]**
 
 [![enter the void intro](https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif)](https://youtu.be/D_T1RgiC2uE?t=65)
 
-[[take1]](https://youtu.be/D_T1RgiC2uE?t=65) [[take2]](https://youtu.be/4Hbrjm1eXNI)
+[[take1]](https://youtu.be/D_T1RgiC2uE?t=65) [[take2]](https://youtu.be/4Hbrjm1eXNI) [[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde) 
 
-[[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde) 
+-----------------------------------------------------------
 
-
-gradient flow
+**gradient flow**
 
 [![gradient](https://media.giphy.com/media/lJllEsnc8fnFU5ROvP/giphy.gif)](https://youtu.be/p1gm3gfmPi0)
 
-[[take1]](https://youtu.be/p1gm3gfmPi0)
-
-[[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroyNOSOUND/video_destroyNOSOUND.pde)
-
+[[take1]](https://youtu.be/p1gm3gfmPi0) [[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroyNOSOUND/video_destroyNOSOUND.pde)
 
 -----------------------------------------------------------
 
