@@ -14,6 +14,8 @@ inspired by refik andols 'data simulations', alvin luciers 'i am sitting in a ro
 
 [![enter the void intro](https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif)](https://youtu.be/4Hbrjm1eXNI)
 
+[![enter the void intro2](https://media.giphy.com/media/uOsJyWlBUm42mvMbAS/giphy.gif)](https://youtu.be/uEkA378JwH4)
+
 [[take1]](https://youtu.be/4Hbrjm1eXNI) [[take2]](https://youtu.be/uEkA378JwH4) [[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde) 
 
 -----------------------------------------------------------
