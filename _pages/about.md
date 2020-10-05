@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img src="https://i.imgur.com/EyfQ5Qz.jpg" width="400" height="256">
+<img src="https://i.imgur.com/EyfQ5Qz.jpg" width="300" height="225">
 
 **student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny**
 
