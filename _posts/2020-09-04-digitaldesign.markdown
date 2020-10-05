@@ -12,9 +12,7 @@ I will be updating this page as I complete more work throughout the semester.
 
 <p align="center">
     <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
-</p>
-
-[view image](https://i.imgur.com/bUeaZJ7.jpg)  
+</p> 
 
 -----------------------------------------------------------
 
