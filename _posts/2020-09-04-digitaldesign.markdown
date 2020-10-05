@@ -18,11 +18,14 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
-**virtuality 1 3 2**
+**virtuality pages**
 
-<img src="https://i.imgur.com/9AEbQDV.png">
+<img src="https://i.imgur.com/Bgx4KlW.jpg">
 
-[view image](https://i.imgur.com/9AEbQDV.png)  
+
+**concepts** 
+
+<img src="https://i.imgur.com/OMAmTwz.jpg">
 
 -----------------------------------------------------------
 
