@@ -22,6 +22,7 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-analytics
+  - jekyll-seo-tag
 # - amp-jekyll # Acceletrated Mobile Pages
 
 jekyll_analytics:
