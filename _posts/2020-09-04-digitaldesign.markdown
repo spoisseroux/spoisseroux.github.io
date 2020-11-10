@@ -33,3 +33,9 @@ I will be updating this page as I complete more work throughout the semester.
 
 -----------------------------------------------------------
 
+**social dream app proposal**
+
+<img src="https://i.imgur.com/DaC8Ec4.jpg">
+
+-----------------------------------------------------------
+
