@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[Premiere] Video works -indev-"
+title:  "[Premiere] Video works"
 date:   2020-09-05 19:48:10
 ---
 
-I will be updating this page as I complete more work throughout the semester.
+works created for a video I class
 
 -----------------------------------------------------------
 
