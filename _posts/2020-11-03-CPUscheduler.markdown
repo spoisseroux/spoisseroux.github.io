@@ -10,7 +10,7 @@ a single core CPU process scheduler simulation created in Java from scratch
 
 **parameter files**
 
-![sim2](https://media.giphy.com/media/IroF9bXP8sAtd0mBMY/giphy.gif)
+![sim2](https://media.giphy.com/media/IpjjD6aBrlxlpIz1eQ/giphy.gif)
 
 the parameter files were formatted to specify these parameters (in milliseconds):
 - total simulation time
@@ -33,7 +33,7 @@ length of time from average times were randomly generated from a standard deviat
 
 **results of params1.txt**
 
-![sim3](https://media.giphy.com/media/Qa0et4HUhJ0kHyeX8J/giphy.gif)
+![sim3](https://media.giphy.com/media/FXQXOLMK04jjzxgciq/giphy.gif)
 
 The results show the overall statistics, as well as the statistics for CPU-bound and IO-bound processes individually
 
