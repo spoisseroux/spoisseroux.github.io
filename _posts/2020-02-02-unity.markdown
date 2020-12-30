@@ -14,6 +14,6 @@ there are 3 levels.
 
 this game was made for global game jam 2020.
 
-[GitHub Repo](https://github.com/spoisseroux/GameJam2020)  
+[code](https://github.com/spoisseroux/GameJam2020)  
 
 

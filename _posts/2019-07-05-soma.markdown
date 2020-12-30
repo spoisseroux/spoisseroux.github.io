@@ -3,7 +3,8 @@ layout: post
 title:  "[AE] Motion graphics"
 date:   2019-07-05 19:48:12
 ---
-each gif is a link to full video
+
+works created withing Adobe After Effects with an emphasis on motion design
 
 -----------------------------------------------------------
 
@@ -11,11 +12,15 @@ each gif is a link to full video
 
 [![soma lyric video](https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif)](https://www.youtube.com/watch?v=_UGfUzKrPuY)
 
+[[watch]](https://www.youtube.com/watch?v=_UGfUzKrPuY)
+
 -----------------------------------------------------------
 
 **text mograph**
 
 [![text motion graphic](https://media.giphy.com/media/MDgaBA4y9l96oJ8gEK/giphy.gif)](https://www.youtube.com/watch?v=2aL8CkJbELo)
+
+[[watch]](https://www.youtube.com/watch?v=2aL8CkJbELo)
 
 -----------------------------------------------------------
 
@@ -23,14 +28,20 @@ each gif is a link to full video
 
 [![color mograph](https://media.giphy.com/media/ky91pekO1D6n775dk0/giphy.gif)](https://www.youtube.com/watch?v=cYTb2Ktv4xY)
 
+[[watch]](https://www.youtube.com/watch?v=cYTb2Ktv4xY)
+
 -----------------------------------------------------------
 
 **hooks**
 
 [![hooks](https://media.giphy.com/media/RfSGSNS1Guyo2AYnqj/giphy.gif)](https://www.youtube.com/watch?v=Lb1eHd3ERcc)
 
+[[watch]](https://www.youtube.com/watch?v=Lb1eHd3ERcc)
+
 -----------------------------------------------------------
 
 **stream intermission graphic in after effects**
 
 [![intermission graphic](https://media.giphy.com/media/LoTbQRm7c8PajWiFGC/giphy.gif)](https://www.youtube.com/watch?v=peOBiAp4-zQ)
+
+[[watch]](https://www.youtube.com/watch?v=peOBiAp4-zQ)

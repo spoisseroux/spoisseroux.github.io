@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[Photoshop] Digital design -indev-"
+title:  "[Photoshop] Digital design"
 date:   2020-09-04 19:48:10
 ---
 
-I will be updating this page as I complete more work throughout the semester.
+works created for digital design II course
 
 -----------------------------------------------------------
 

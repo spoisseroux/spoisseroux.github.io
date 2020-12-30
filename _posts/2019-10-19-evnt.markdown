@@ -17,7 +17,7 @@ EVNT features:
 + contemporary layout
 + responsive UI
 
-[GitHub Repo](https://github.com/spoisseroux/evnt)  
+[code](https://github.com/spoisseroux/evnt)  
 
 <img src="https://media.giphy.com/media/dv6OdKb9Xic5VuAnyr/giphy.gif"/>
 

@@ -16,4 +16,6 @@ click gifs to see video
 
 [![VRplayground](https://media.giphy.com/media/YN2Tf2hmZmqocRFaME/giphy.gif)](https://www.youtube.com/watch?v=tOTFP5tdaCc&t=8s)
 
+[[watch]](https://youtu.be/tOTFP5tdaCc)
+
 
