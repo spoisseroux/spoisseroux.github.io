@@ -7,6 +7,6 @@ generative circle art used in generative art exhibition at the deep end (brookly
 piece was projected and accompanied a synth performance  
 made using python and turtle  
 
-[code](https://github.com/spoisseroux/Circle_Gen)  
+[[code]](https://github.com/spoisseroux/Circle_Gen)  
 
 <img src="https://media.giphy.com/media/cmZ26PGRwNik5GDIe8/giphy.gif"/>
