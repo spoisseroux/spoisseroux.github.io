@@ -4,13 +4,13 @@ title:  "[Java] CPU scheduler simulator"
 date:   2020-11-03 19:48:10
 ---
 
-a CPU process scheduler simulation created in Java from scratch
+a single core CPU process scheduler simulation created in Java from scratch
 
 -----------------------------------------------------------
 
 **parameter files**
 
-[![sim2](https://media.giphy.com/media/IroF9bXP8sAtd0mBMY/giphy.gif)]
+![sim2](https://media.giphy.com/media/IroF9bXP8sAtd0mBMY/giphy.gif)
 
 the parameter files were formatted to specify these parameters (in milliseconds):
 - total simulation time
@@ -27,13 +27,13 @@ length of time from average times were randomly generated from a standard deviat
 
 **running params1.txt**
 
-[![sim1](https://media.giphy.com/media/mQxWtnyFISCKfVtD8u/giphy.gif)]
+![sim1](https://media.giphy.com/media/erZuhUa1Rey9jYqOdj/giphy.gif)
 
 -----------------------------------------------------------
 
 **results of params1.txt**
 
-[![sim3](https://media.giphy.com/media/SxUpofl5lMYSvJ9XGI/giphy.gif)]
+![sim3](https://media.giphy.com/media/Qa0et4HUhJ0kHyeX8J/giphy.gif)
 
 The results show the overall statistics, as well as the statistics for CPU-bound and IO-bound processes individually
 
