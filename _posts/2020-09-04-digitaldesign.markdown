@@ -14,22 +14,30 @@ works created for digital design II course
     <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 </p> 
 
+[[view]](https://i.imgur.com/bUeaZJ7.jpg)
+
 -----------------------------------------------------------
 
 **virtuality pages**
 
 <img src="https://i.imgur.com/Bgx4KlW.jpg">
 
+[[view]](https://i.imgur.com/Bgx4KlW.jpg)
+
 
 **concepts** 
 
 <img src="https://i.imgur.com/OMAmTwz.jpg">
+
+[[view]](https://i.imgur.com/OMAmTwz.jpg)
 
 -----------------------------------------------------------
 
 **social app concept**
 
 <img src="https://i.imgur.com/nHeem1n.png">
+
+[[view]](https://i.imgur.com/nHeem1n.png)
 
 -----------------------------------------------------------
 
