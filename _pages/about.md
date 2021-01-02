@@ -5,15 +5,18 @@ permalink: /about/
 ---
 <img src="https://i.imgur.com/EyfQ5Qz.jpg" width="400">
 
-**student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny**
+**student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny - graduating may 2021**
 
-**currently enrolled:**
-[Programming Languages and Implementation, 
-Operating Systems and Architecture,
-Digital Design II, 
-Video I]
+**ニューヨークでペース大学のコンピュータ・サイエンス理学士四年生です。副専攻はデジタル・アートです。２０２１年５月に卒業します。日本で務めるとビザが必要です**
 
-**proficient in:**
+**currently enrolled （今学期のコース）：**
+[Networks and the Internet, 
+Software Engineering,
+Unreal Engine Development, 
+Film Photography,
+Principles of Design]
+
+**proficient in　（技術）:**
 [Python,
 Java,
 C,
@@ -35,10 +38,14 @@ Adobe Creative Suite,
 Japanese]
 
 
-**interested in:**
+**interested in　（興味）:**
 [Creative Coding,
 Audio Programming,
 Music Composition,
 Virtual Worlds,
 Game Development,
+AI,
+XR/AR/VR,
+Natural Language Processing,
+Accessibility Technologies,
 Digital & Code based Art]
