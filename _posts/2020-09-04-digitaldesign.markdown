@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[Photoshop] Digital design -indev-"
+title:  "[Photoshop] Digital design"
 date:   2020-09-04 19:48:10
 ---
 
-I will be updating this page as I complete more work throughout the semester.
+works created for digital design II course
 
 -----------------------------------------------------------
 
@@ -14,16 +14,22 @@ I will be updating this page as I complete more work throughout the semester.
     <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 </p> 
 
+[[view]](https://i.imgur.com/bUeaZJ7.jpg)
+
 -----------------------------------------------------------
 
 **virtuality pages**
 
 <img src="https://i.imgur.com/Bgx4KlW.jpg">
 
+[[view]](https://i.imgur.com/Bgx4KlW.jpg)
+
 
 **concepts** 
 
 <img src="https://i.imgur.com/OMAmTwz.jpg">
+
+[[view]](https://i.imgur.com/OMAmTwz.jpg)
 
 -----------------------------------------------------------
 
@@ -31,11 +37,15 @@ I will be updating this page as I complete more work throughout the semester.
 
 <img src="https://i.imgur.com/nHeem1n.png">
 
+[[view]](https://i.imgur.com/nHeem1n.png)
+
 -----------------------------------------------------------
 
 **social dream app proposal**
 
 <img src="https://i.imgur.com/DaC8Ec4.jpg">
+
+[[view]](https://i.imgur.com/DaC8Ec4.jpg)
 
 -----------------------------------------------------------
 

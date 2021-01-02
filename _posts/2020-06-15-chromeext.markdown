@@ -14,7 +14,7 @@ Project introduction video
 
 [![ChromeExt Video](https://media.giphy.com/media/Iazt0OtkTnh1XWPl2N/giphy.gif)](https://youtu.be/fJ07ENn_Xe4)
 
-[code](https://github.com/alexalrobinson/chrome-ext) 
+[[code]](https://github.com/alexalrobinson/chrome-ext) 
 
 
 -----------------------------------------------------------

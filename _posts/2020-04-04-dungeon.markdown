@@ -20,7 +20,7 @@ click the gif below to play on itch.io
 - potions heal 20 health
 - hearts heal 10 health
 
-[GitHub Repo](https://github.com/spoisseroux/dungeoncrawler)  
+[[code]](https://github.com/spoisseroux/dungeoncrawler)  
 
 
 
