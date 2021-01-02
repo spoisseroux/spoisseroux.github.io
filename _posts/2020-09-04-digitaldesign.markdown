@@ -37,5 +37,7 @@ works created for digital design II course
 
 <img src="https://i.imgur.com/DaC8Ec4.jpg">
 
+[[view]](https://i.imgur.com/DaC8Ec4.jpg)
+
 -----------------------------------------------------------
 
