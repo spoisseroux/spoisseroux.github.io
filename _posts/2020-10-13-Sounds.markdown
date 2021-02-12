@@ -10,17 +10,19 @@ various sounds and sounds projects from audacity, ableton
 
 **mixtapes**
 
-<details>
-    <summary>open here</summary>
-    <!-- jan 21 -->
-    <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fjan21_mix%2F" frameborder="0" ></iframe>
-    <!-- dec 20 -->
-    <!-- nov 20 -->
-    <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fnov20_mix%2F" frameborder="0" ></iframe>
-    <!-- oct 20 -->
-    <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Foct20_mix%2F" frameborder="0" ></iframe>
-    <!-- sep 20 -->
-    <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsep20_mix%2F" frameborder="0" ></iframe>
-</details>
 
+<!-- jan 21 -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fjan21_mix%2F" frameborder="0" ></iframe>
+
+<!-- dec 20 -->
+
+<!-- nov 20 -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fnov20_mix%2F" frameborder="0" ></iframe>
+
+<!-- oct 20 -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Foct20_mix%2F" frameborder="0" ></iframe>
+
+<!-- sep 20 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsep20_mix%2F" frameborder="0" ></iframe>
+
+
