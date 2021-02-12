@@ -5,6 +5,7 @@ date:   2020-10-13 19:48:10
 ---
 
 various sounds and sounds projects from audacity, ableton
+as of feb 2021 mixcloud embeds are not showing in safari
 
 -----------------------------------------------------------
 
