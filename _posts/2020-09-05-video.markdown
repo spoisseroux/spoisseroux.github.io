@@ -8,13 +8,15 @@ works created for a video I course
 
 -----------------------------------------------------------
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/77J2qe44VPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 **clip montage**
 
 [![video collage](https://media.giphy.com/media/TLCWrI3T1CUCgeCEQN/giphy.gif)](https://youtu.be/cw_o9cyiajI)
 
-[[watch]](https://youtu.be/cw_o9cyiajI)
+<details>
+    <summary>watch</summary>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cw_o9cyiajI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+<!-- [[watch]](https://youtu.be/cw_o9cyiajI) -->
 
 a montage of about one minute using clips of only one or a few seconds each; presented without sound
 
