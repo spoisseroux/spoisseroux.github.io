@@ -17,8 +17,6 @@ works created withing Adobe After Effects with an emphasis on motion design
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_UGfUzKrPuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
 
-[[watch]](https://www.youtube.com/watch?v=_UGfUzKrPuY)
-
 -----------------------------------------------------------
 
 **text mograph**
@@ -29,8 +27,6 @@ works created withing Adobe After Effects with an emphasis on motion design
     <summary>watch</summary>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2aL8CkJbELo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
-
-[[watch]](https://www.youtube.com/watch?v=2aL8CkJbELo)
 
 -----------------------------------------------------------
 
@@ -43,8 +39,6 @@ works created withing Adobe After Effects with an emphasis on motion design
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cYTb2Ktv4xY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
 
-[[watch]](https://www.youtube.com/watch?v=cYTb2Ktv4xY)
-
 -----------------------------------------------------------
 
 **hooks**
@@ -56,8 +50,6 @@ works created withing Adobe After Effects with an emphasis on motion design
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Lb1eHd3ERcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
 
-[[watch]](https://www.youtube.com/watch?v=Lb1eHd3ERcc)
-
 -----------------------------------------------------------
 
 **stream intermission graphic in after effects**
@@ -68,5 +60,3 @@ works created withing Adobe After Effects with an emphasis on motion design
     <summary>watch</summary>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/peOBiAp4-zQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
-
-[[watch]](https://www.youtube.com/watch?v=peOBiAp4-zQ)
