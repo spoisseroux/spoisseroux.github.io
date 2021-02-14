@@ -1,9 +1,8 @@
----
+ ---
 layout: post
 title:  "[Various] Sounds"
 date:   2020-10-13 19:48:10
 ---
---> as of feb 2021 mixcloud embeds are not showing in safari
 
 various sounds and sounds projects from audacity, ableton
 
