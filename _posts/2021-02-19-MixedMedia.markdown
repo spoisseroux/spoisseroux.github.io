@@ -4,7 +4,7 @@ title:  "[Touch] Mixed media"
 date:   2020-11-03 19:48:10
 ---
 
-projects in mixed mediums
+**projects in mixed mediums**
 
 -----------------------------------------------------------
 
@@ -16,5 +16,7 @@ paper, acrylic, pencil graphite in medium
 
 <img src="https://i.imgur.com/MQPTUa3.jpg">
 
-<img stc="https://i.imgur.com/zIlrJxA.jpg">
+<img src="https://i.imgur.com/zIlrJxA.jpg">
+
+paper, sakura micron
 
