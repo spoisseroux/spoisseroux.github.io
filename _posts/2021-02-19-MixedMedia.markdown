@@ -8,7 +8,7 @@ date:   2020-11-03 19:48:10
 
 -----------------------------------------------------------
 
-<img src="https://i.imgur.com/V8yynWh.png">
+<img src="https://i.imgur.com/XgAuRbt.jpg">
 
 paper, acrylic, pencil graphite in medium
 
