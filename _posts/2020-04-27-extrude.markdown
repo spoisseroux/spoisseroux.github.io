@@ -14,9 +14,19 @@ inspired by refik andols 'data simulations', alvin luciers 'i am sitting in a ro
 
 [![enter the void intro](https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif)](https://youtu.be/4Hbrjm1eXNI)
 
+<details>
+    <summary>watch</summary>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Hbrjm1eXNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
 [![enter the void intro2](https://media.giphy.com/media/aRF5dG2KI3ZbWq0B0C/giphy.gif)](https://youtu.be/SBQCFHEOetY)
 
-[[take1]](https://youtu.be/4Hbrjm1eXNI) [[take2]](https://youtu.be/SBQCFHEOetY) [[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde) 
+<details>
+    <summary>watch</summary>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SBQCFHEOetY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
+[[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde) 
 
 -----------------------------------------------------------
 
@@ -24,7 +34,12 @@ inspired by refik andols 'data simulations', alvin luciers 'i am sitting in a ro
 
 [![gradient](https://media.giphy.com/media/q6gZGTTYLsmx5MakMp/giphy.gif)](https://youtu.be/ASYFPcH0Cew)
 
-[[take1]](https://youtu.be/ASYFPcH0Cew) [[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroyNOSOUND/video_destroyNOSOUND.pde)
+<details>
+    <summary>watch</summary>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ASYFPcH0Cew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
+[[code]](https://github.com/spoisseroux/Processing3/blob/master/video_destroyNOSOUND/video_destroyNOSOUND.pde)
 
 -----------------------------------------------------------
 
