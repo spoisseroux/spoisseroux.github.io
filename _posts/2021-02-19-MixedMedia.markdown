@@ -12,11 +12,13 @@ date:   2020-11-03 19:48:10
 
 <img src="https://i.imgur.com/zIlrJxA.jpg">
 
+apollonian --> dionysian
+
 paper, sakura micron
 
 -----------------------------------------------------------
 
-<img src="https://i.imgur.com/YxIlNmJ.jpg">
+<img src="https://i.imgur.com/NwVIpDo.jpg">
 
 acrylic on paper, pencil graphite in medium
 
