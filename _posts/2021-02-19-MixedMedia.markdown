@@ -18,9 +18,11 @@ paper, sakura micron
 
 <img src="https://i.imgur.com/YxIlNmJ.jpg">
 
-paper, acrylic, pencil graphite in medium
+acrylic on paper, pencil graphite in medium
 
 <img src="https://i.imgur.com/buGzURu.jpg">
+
+acrylic on wax
 
 
 
