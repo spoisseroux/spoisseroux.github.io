@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Touch] Mixed media"
-date:   2020-11-03 19:48:10
+date:   2021-02-19 19:48:10
 ---
 
 **projects in mixed mediums**
