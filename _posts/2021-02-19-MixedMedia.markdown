@@ -16,7 +16,7 @@ paper, sakura micron
 
 -----------------------------------------------------------
 
-<img src="https://i.imgur.com/BEbEjAS.jpg">
+<img src="https://i.imgur.com/YxIlNmJ.jpg">
 
 paper, acrylic, pencil graphite in medium
 
