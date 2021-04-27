@@ -4,14 +4,7 @@ title:  "[Ableton] Sounds"
 date:   2020-10-13 19:48:10
 ---
 
-various sounds and sounds projects from audacity, ableton
-
------------------------------------------------------------
-
-**themed mixes**
-
-<!-- silent hill mix -->
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsilenthill_mix%2F" frameborder="0" ></iframe>
+various sounds, mostly monthly mixes i use as a beacon for each month
 
 -----------------------------------------------------------
 
@@ -39,4 +32,9 @@ various sounds and sounds projects from audacity, ableton
 <!-- sep 20 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsep20_mix%2F" frameborder="0" ></iframe>
 
+-----------------------------------------------------------
 
+**themed mixes**
+
+<!-- silent hill mix -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsilenthill_mix%2F" frameborder="0" ></iframe>
