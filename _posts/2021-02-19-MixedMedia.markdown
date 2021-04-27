@@ -21,8 +21,8 @@ date:   2021-02-19 19:48:10
 *self portraits*
 
 <p float="left">
-  <img src="https://i.imgur.com/4teXfrc.jpg" width="250" />
-  <img src="https://i.imgur.com/1iDsHN2.jpg" width="250" /> 
+  <img src="https://i.imgur.com/4teXfrc.jpg" />
+  <img src="https://i.imgur.com/1iDsHN2.jpg" /> 
 </p>
 
 
