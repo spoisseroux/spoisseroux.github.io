@@ -21,8 +21,8 @@ paper, sakura micron
 *self portraits*
 
 <p float="left">
-  <img src="https://i.imgur.com/4teXfrc.jpg" width="150" />
-  <img src="https://i.imgur.com/1iDsHN2.jpg" width="150" /> 
+  <img src="https://i.imgur.com/4teXfrc.jpg" width="250" />
+  <img src="https://i.imgur.com/1iDsHN2.jpg" width="250" /> 
 </p>
 
 paper, pilot pen
