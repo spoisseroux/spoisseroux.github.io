@@ -16,7 +16,7 @@ date:   2021-02-19 19:48:10
 
 <img src="https://i.imgur.com/zIlrJxA.jpg">
 
-paper, sakura micron
+
 
 *self portraits*
 
@@ -25,13 +25,12 @@ paper, sakura micron
   <img src="https://i.imgur.com/1iDsHN2.jpg" width="250" /> 
 </p>
 
-paper, pilot pen
+
 
 *red*
 
 <img src="https://i.imgur.com/K0j5c1W.jpg">
 
-paper, magazine clippings
 
 -----------------------------------------------------------
 
