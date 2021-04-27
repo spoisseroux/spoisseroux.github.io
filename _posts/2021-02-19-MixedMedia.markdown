@@ -57,6 +57,8 @@ acrylic on wax
 
 <img src="https://i.imgur.com/B1LuvgG.jpg">
 
+<!--
+
 -----------------------------------------------------------
 
 **digital**
@@ -68,3 +70,5 @@ acrylic on wax
 *rauschenberg slime mold*
 
 <img src="https://i.imgur.com/6GoiK1U.png">
+
+-->
