@@ -43,7 +43,7 @@ acrylic on paper, pencil graphite in medium
 
 acrylic on wax
 
-<img src="https://i.imgur.com/fegfKeX.jpg">
+<img src="https://i.imgur.com/gTD5Jvi.jpg">
 
 acrylic on canvas, paper; with medium and alcohol
 
