@@ -43,6 +43,10 @@ acrylic on paper, pencil graphite in medium
 
 acrylic on wax
 
+<img src="https://i.imgur.com/kcYK359.jpg">
+
+acrylic on canvas, paper; with medium and alcohol
+
 -----------------------------------------------------------
 
 **analog photo**
