@@ -5,7 +5,7 @@ permalink: /about/
 ---
 <img src="https://i.imgur.com/uC3nHFT.jpg" width="400">
 
-**student pursuing a bachelor of science in computer science, minor in digital and time-based art, at pace university in new york, ny - graduating may 2021**
+**B.S. in computer science, minor in digital & time-based art from pace university in new york, ny**
 
 <!-- **ニューヨークでペース大学のコンピュータ・サイエンス理学士四年生です。副専攻はデジタル・アートです。２０２１年５月に卒業します。日本で務めるとビザが必要です** -->
 
