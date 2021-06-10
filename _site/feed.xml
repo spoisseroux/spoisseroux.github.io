@@ -6,9 +6,353 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Jul 2020 23:09:50 -0400</pubDate>
-    <lastBuildDate>Wed, 08 Jul 2020 23:09:50 -0400</lastBuildDate>
-    <generator>Jekyll v3.8.7</generator>
+    <pubDate>Wed, 09 Jun 2021 20:31:23 -0400</pubDate>
+    <lastBuildDate>Wed, 09 Jun 2021 20:31:23 -0400</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>[Android] Planner App</title>
+        <description>&lt;p&gt;&lt;strong&gt;Made with focus on SCRUM methodology&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;!-- poster --&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qivx221.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1UoEZJ1j6tmJBd1klFjiBvz9JikfLq6inU3--4wdCZwc/edit?usp=sharing&quot;&gt;[presentation]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A cross-device planning app that allows&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;account creation&lt;/li&gt;
+  &lt;li&gt;setting of tasks&lt;/li&gt;
+  &lt;li&gt;setting tasks due at certain dates/times&lt;/li&gt;
+  &lt;li&gt;ability to set alerts&lt;/li&gt;
+  &lt;li&gt;ability to set extra information for a task&lt;/li&gt;
+  &lt;li&gt;minimalistic UI/UX&lt;/li&gt;
+  &lt;li&gt;autopropagation to realtime database&lt;/li&gt;
+  &lt;li&gt;notification/alert intents that open to app&lt;/li&gt;
+  &lt;li&gt;management of tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;demo:&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/e6JNGbXm6fY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Mon, 26 Apr 2021 15:48:10 -0400</pubDate>
+        <link>http://localhost:4000/2021/04/PlanningApp</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/04/PlanningApp</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Touch] Mixed media</title>
+        <description>&lt;p&gt;&lt;strong&gt;projects in various mediums&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;paper&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;pear&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/MQPTUa3.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zIlrJxA.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;self portraits&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/4teXfrc.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1iDsHN2.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;red&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/K0j5c1W.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;paint&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ECPefXn.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;acrylic on paper, pencil graphite in medium&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/buGzURu.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;acrylic on wax&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lp2FMYs.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;acrylic on canvas, paper; with medium and alcohol&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;analog photo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/94aHdiB.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Z23jAyC.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/373LVKw.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/TgGocNc.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/B1LuvgG.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;!--
+
+-----------------------------------------------------------
+
+**digital**
+
+*emulation*
+
+&lt;img src=&quot;https://i.imgur.com/P5n0O1U.jpg&quot;&gt;
+
+*rauschenberg slime mold*
+
+&lt;img src=&quot;https://i.imgur.com/6GoiK1U.png&quot;&gt;
+
+--&gt;
+</description>
+        <pubDate>Fri, 19 Feb 2021 14:48:10 -0500</pubDate>
+        <link>http://localhost:4000/2021/02/MixedMedia</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/MixedMedia</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Java] CPU scheduler simulator</title>
+        <description>&lt;p&gt;a single core CPU process scheduler simulation created in Java from scratch&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;parameter files&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/IpjjD6aBrlxlpIz1eQ/giphy.gif&quot; alt=&quot;sim2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;the parameter files were formatted to specify these parameters (in milliseconds):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;total simulation time&lt;/li&gt;
+  &lt;li&gt;quantum time&lt;/li&gt;
+  &lt;li&gt;context switch&lt;/li&gt;
+  &lt;li&gt;average process length&lt;/li&gt;
+  &lt;li&gt;average creation length&lt;/li&gt;
+  &lt;li&gt;IO bound process time&lt;/li&gt;
+  &lt;li&gt;average IO service time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;length of time from average times were randomly generated from a standard deviation&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;running params1.txt&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/erZuhUa1Rey9jYqOdj/giphy.gif&quot; alt=&quot;sim1&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;results of params1.txt&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/FXQXOLMK04jjzxgciq/giphy.gif&quot; alt=&quot;sim3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The results show the overall statistics, as well as the statistics for CPU-bound and IO-bound processes individually&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/cs371scheduler/tree/main/cs371scheduler&quot;&gt;[code]&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Nov 2020 14:48:10 -0500</pubDate>
+        <link>http://localhost:4000/2020/11/CPUscheduler</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/11/CPUscheduler</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Ableton] Sounds</title>
+        <description>&lt;p&gt;various sounds, mostly monthly mixes i use as a beacon for each month&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;monthly mixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- apr 21 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fapr21_mixsotsugyou%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- mar 21 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fmar21_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- feb 21 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Ffeb21_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- jan 21 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fjan21_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- dec 20 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fdec20_mixlostfound%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- nov 20 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fnov20_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- oct 20 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Foct20_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- sep 20 --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fsep20_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;themed mixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- silent hill mix --&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;120&quot; src=&quot;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;amp;light=1&amp;amp;feed=%2Fkeehar%2Fsilenthill_mix%2F&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2020 15:48:10 -0400</pubDate>
+        <link>http://localhost:4000/2020/10/Sounds</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/10/Sounds</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Premiere] Video works</title>
+        <description>&lt;p&gt;works created for a video I course&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;clip montage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/cw_o9cyiajI&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/TLCWrI3T1CUCgeCEQN/giphy.gif&quot; alt=&quot;video collage&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cw_o9cyiajI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+&lt;!-- [[watch]](https://youtu.be/cw_o9cyiajI) --&gt;
+
+&lt;p&gt;a montage of about one minute using clips of only one or a few seconds each; presented without sound&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;clip montage + sound&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/77J2qe44VPI&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/gvU8Ar4BzPIPWMVmj7/giphy.gif&quot; alt=&quot;video sound&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/77J2qe44VPI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+&lt;!-- [[watch]](https://youtu.be/77J2qe44VPI) --&gt;
+
+&lt;p&gt;reworked the sound of the montage using no audio from the original videos and using only found sounds
+explored topics of foley and demonstration through sound&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;document: how we hear&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1B4Z-y_AlnptdHxuEZazlu8A65zi9T2oE/view?usp=sharing&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/SxUpofl5lMYSvJ9XGI/giphy.gif&quot; alt=&quot;document&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe src=&quot;https://drive.google.com/file/d/1B4Z-y_AlnptdHxuEZazlu8A65zi9T2oE/preview&quot; width=&quot;560&quot; height=&quot;315&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+&lt;!-- [[watch]](https://drive.google.com/file/d/1B4Z-y_AlnptdHxuEZazlu8A65zi9T2oE/view?usp=sharing) --&gt;
+
+&lt;p&gt;prompt was to create a video documenting something; anything. for this video i chose to document
+the music my friends enjoy, and why.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;video story: revisiting+&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/rGB8oHgTChk&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/WW6IDm2FJcZuDIq4Mw/giphy.gif&quot; alt=&quot;video final&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rGB8oHgTChk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+&lt;!-- [[watch]](https://youtu.be/rGB8oHgTChk) --&gt;
+
+&lt;p&gt;prompt was to simply create a video around five minutes in length that tells a story with original 
+footage and audio&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;monodrama: seeds&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/RIVPfIDTMmk&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/Wu1kvunrmjZAp8INtu/giphy.gif&quot; alt=&quot;monodrama&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RIVPfIDTMmk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+&lt;!-- [[watch]](https://youtu.be/RIVPfIDTMmk) --&gt;
+
+&lt;p&gt;prompt was to create a monodrama based of a craigslist missed connections ad&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Sep 2020 15:48:10 -0400</pubDate>
+        <link>http://localhost:4000/2020/09/video</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/09/video</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Photoshop] Digital design</title>
+        <description>&lt;p&gt;works created for digital design II course&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;fifty elements&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/bUeaZJ7.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/bUeaZJ7.jpg&quot;&gt;[view]&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;virtuality pages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Bgx4KlW.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Bgx4KlW.jpg&quot;&gt;[view]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;concepts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/OMAmTwz.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/OMAmTwz.jpg&quot;&gt;[view]&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;social app concept&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nHeem1n.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/nHeem1n.png&quot;&gt;[view]&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;social dream app proposal&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DaC8Ec4.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DaC8Ec4.jpg&quot;&gt;[view]&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Fri, 04 Sep 2020 15:48:10 -0400</pubDate>
+        <link>http://localhost:4000/2020/09/digitaldesign</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/09/digitaldesign</guid>
+        
+        
+      </item>
     
       <item>
         <title>[Javascript] Webpage customizer</title>
@@ -22,7 +366,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/fJ07ENn_Xe4&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/Iazt0OtkTnh1XWPl2N/giphy.gif&quot; alt=&quot;ChromeExt Video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/alexalrobinson/chrome-ext&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/alexalrobinson/chrome-ext&quot;&gt;[code]&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -35,20 +379,43 @@
       </item>
     
       <item>
-        <title>[Processing3] Pixel extrude, video destroy</title>
+        <title>[Processing3] 3D video pixel extrusion</title>
         <description>&lt;p&gt;original processing3 script that extrudes pixels in 3d space based on the value of brightness, and adjusts rotation based on amplitude of audio&lt;/p&gt;
 
 &lt;p&gt;inspired by refik andols ‘data simulations’, alvin luciers ‘i am sitting in a room’&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;click gif to watch&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;gaspar noe - enter the void [credits intro]&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;gaspar noe - enter the void [credits intro]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/4Hbrjm1eXNI&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif&quot; alt=&quot;enter the void intro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/D_T1RgiC2uE?t=65&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/JpGHpIUUAa9jqDMS0p/giphy.gif&quot; alt=&quot;enter the void intro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4Hbrjm1eXNI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde&quot;&gt;code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/SBQCFHEOetY&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/aRF5dG2KI3ZbWq0B0C/giphy.gif&quot; alt=&quot;enter the void intro2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/SBQCFHEOetY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/video_destroy/video_destroy.pde&quot;&gt;[code]&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;gradient flow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/ASYFPcH0Cew&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/q6gZGTTYLsmx5MakMp/giphy.gif&quot; alt=&quot;gradient&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ASYFPcH0Cew&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/video_destroyNOSOUND/video_destroyNOSOUND.pde&quot;&gt;[code]&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -73,18 +440,21 @@
       </item>
     
       <item>
-        <title>[Unity/C4D] VR World</title>
+        <title>[Unity/C4D] VR world</title>
         <description>&lt;p&gt;&lt;strong&gt;house and robot modeled by me in cinema4d&lt;/strong&gt; // 
 &lt;strong&gt;environment created in unity with standard assets, probuilder&lt;/strong&gt; // 
 &lt;strong&gt;furnishings from unity asset store&lt;/strong&gt; // &lt;strong&gt;textures from textures.com&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;click gifs to see video&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/gjBvGZVmNd3nGxPRNM/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/hqg1slhQUayOAtejGf/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tOTFP5tdaCc&amp;amp;t=8s&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/YN2Tf2hmZmqocRFaME/giphy.gif&quot; alt=&quot;VRplayground&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;watch&lt;/summary&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tOTFP5tdaCc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/details&gt;
 
 </description>
         <pubDate>Sun, 12 Apr 2020 15:48:12 -0400</pubDate>
@@ -106,6 +476,8 @@
 
 &lt;p&gt;&lt;a href=&quot;https://keehar.itch.io/dungeon&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LM87qYjYlr9203XDjR/giphy.gif&quot; alt=&quot;game&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;iframe src=&quot;https://itch.io/embed/603195&quot; height=&quot;167&quot; width=&quot;552&quot; frameborder=&quot;0&quot;&gt;&lt;a href=&quot;https://keehar.itch.io/dungeon&quot;&gt;____dungeon____ by keehar&lt;/a&gt;&lt;/iframe&gt;
+
 &lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;on my browser i have to click in the viewport to hear audio&lt;/li&gt;
@@ -114,174 +486,12 @@
   &lt;li&gt;hearts heal 10 health&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/dungeoncrawler&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/dungeoncrawler&quot;&gt;[code]&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 04 Apr 2020 15:48:12 -0400</pubDate>
         <link>http://localhost:4000/2020/04/dungeon</link>
         <guid isPermaLink="true">http://localhost:4000/2020/04/dungeon</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[Processing3] Sketches</title>
-        <description>&lt;p&gt;&lt;strong&gt;click any gif to see code on github&lt;/strong&gt;
-&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/static_project/static_project.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/RGkeHCPdHu3ff9blvF/giphy.gif&quot; alt=&quot;static_project&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/repetition/repetition.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/huyHQO8DjK8k6pjZUc/giphy.gif&quot; alt=&quot;repetition&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/triangle_mouse_burst/triangle_mouse_burst.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LmkmTDsyrOER2dtLXS/giphy.gif&quot; alt=&quot;triangle_burst&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/bool_grid/bool_grid.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/mA7PD2DnLkPsVAQOCS/giphy.gif&quot; alt=&quot;random_bool&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/random_nude/random_nude.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/XD3vsEiZY7s4CkOiF6/giphy.gif&quot; alt=&quot;random_portrait&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/Processing3/blob/master/random_height/random_height.pde&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/f9r0OhIVkZqOkoNrQc/giphy.gif&quot; alt=&quot;random_height&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 20 Feb 2020 14:48:12 -0500</pubDate>
-        <link>http://localhost:4000/2020/02/processing</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/processing</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[Unity] 3D statue puzzle</title>
-        <description>&lt;p&gt;in this unity game players control the camera with “a” and “d” keys and use the given perspective drag each piece into its respective place and complete the statue. 
-there are 3 levels.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/JonfJkywAel5uG0PGi/giphy.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/UqkgNMlXCEjG4Q5rJK/giphy.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/llTrSHsONZOrtT8wq0/giphy.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;this game was made for global game jam 2020.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/GameJam2020&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 02 Feb 2020 14:48:12 -0500</pubDate>
-        <link>http://localhost:4000/2020/02/unity</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/unity</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[Photo] Tokyo series</title>
-        <description>&lt;p&gt;revisting memories from 2014&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Wzhj81l.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FuqqUuc.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RJXcNJY.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/M9WkOaz.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kc370ZY.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yxxNr1u.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hm3ZB27.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/NzKYWE5.jpg&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Dec 2019 14:48:12 -0500</pubDate>
-        <link>http://localhost:4000/2019/12/tokyo</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/12/tokyo</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[React] Event planning app</title>
-        <description>&lt;p&gt;EVNT is an event planning app made in react native&lt;/p&gt;
-
-&lt;p&gt;Users can:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;create an account&lt;/li&gt;
-  &lt;li&gt;sign in&lt;/li&gt;
-  &lt;li&gt;see events&lt;/li&gt;
-  &lt;li&gt;see other users who are going to events&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;EVNT features:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;dynamic animations&lt;/li&gt;
-  &lt;li&gt;firebase integration&lt;/li&gt;
-  &lt;li&gt;contemporary layout&lt;/li&gt;
-  &lt;li&gt;responsive UI&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/spoisseroux/evnt&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/dv6OdKb9Xic5VuAnyr/giphy.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;//.gif needs to be updated to reflect firebase integration&lt;/p&gt;
-</description>
-        <pubDate>Sat, 19 Oct 2019 15:48:12 -0400</pubDate>
-        <link>http://localhost:4000/2019/10/evnt</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/evnt</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[Python] Spiral_gen.py</title>
-        <description>&lt;p&gt;generative circle art used in generative art exhibition at the deep end (brooklyn, ny)&lt;br /&gt;
-piece was projected and accompanied a synth performance&lt;br /&gt;
-made using python and turtle&lt;br /&gt;
-&lt;a href=&quot;https://github.com/spoisseroux/Circle_Gen&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/cmZ26PGRwNik5GDIe8/giphy.gif&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 27 Aug 2019 15:48:12 -0400</pubDate>
-        <link>http://localhost:4000/2019/08/circle-gen</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/circle-gen</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>[AE] Motion graphics</title>
-        <description>&lt;p&gt;each gif is a link to full video&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;a lyric video made in adobe after effects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_UGfUzKrPuY&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/ZEwO89OzMzGCwCgygy/giphy.gif&quot; alt=&quot;soma lyric video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;text mograph&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2aL8CkJbELo&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/MDgaBA4y9l96oJ8gEK/giphy.gif&quot; alt=&quot;text motion graphic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;color flow&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cYTb2Ktv4xY&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/ky91pekO1D6n775dk0/giphy.gif&quot; alt=&quot;color mograph&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;hooks&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Lb1eHd3ERcc&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/RfSGSNS1Guyo2AYnqj/giphy.gif&quot; alt=&quot;hooks&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;stream intermission graphic in after effects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=peOBiAp4-zQ&quot;&gt;&lt;img src=&quot;https://media.giphy.com/media/LoTbQRm7c8PajWiFGC/giphy.gif&quot; alt=&quot;intermission graphic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 05 Jul 2019 15:48:12 -0400</pubDate>
-        <link>http://localhost:4000/2019/07/soma</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/soma</guid>
         
         
       </item>

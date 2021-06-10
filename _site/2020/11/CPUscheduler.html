@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>[Python] Spiral_gen.py - Spencer Poisseroux</title>
-    <meta name="description" content="generative circle art used in generative art exhibition at the deep end (brooklyn, ny)piece was projected and accompanied a synth performancemade using pytho...">
+    <title>[Java] CPU scheduler simulator - Spencer Poisseroux</title>
+    <meta name="description" content="a single core CPU process scheduler simulation created in Java from scratch">
 
     <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese"rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/2019/08/circle-gen">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="http://localhost:4000/2020/11/CPUscheduler">
     <link rel="alternate" type="application/rss+xml" title="Spencer Poisseroux" href="http://localhost:4000/feed.xml">
     
 
@@ -48,16 +49,47 @@
     	<div class="c-article__main">
         <article class="c-article">
     <header class="c-article__header">
-        <h1 class="c-article__title">[Python] Spiral_gen.py</h1>
-        <p class="c-article__time"><time datetime="2019-08-27T15:48:12-04:00" itemprop="datePublished">Aug 27, 2019</time></p>
+        <h1 class="c-article__title">[Java] CPU scheduler simulator</h1>
+        <p class="c-article__time"><time datetime="2020-11-03T14:48:10-05:00" itemprop="datePublished">Nov 3, 2020</time></p>
     </header>
     <div class="c-article__main">
-        <p>generative circle art used in generative art exhibition at the deep end (brooklyn, ny)<br />
-piece was projected and accompanied a synth performance<br />
-made using python and turtle<br />
-<a href="https://github.com/spoisseroux/Circle_Gen">GitHub Repo</a></p>
+        <p>a single core CPU process scheduler simulation created in Java from scratch</p>
 
-<p><img src="https://media.giphy.com/media/cmZ26PGRwNik5GDIe8/giphy.gif" /></p>
+<hr />
+
+<p><strong>parameter files</strong></p>
+
+<p><img src="https://media.giphy.com/media/IpjjD6aBrlxlpIz1eQ/giphy.gif" alt="sim2" /></p>
+
+<p>the parameter files were formatted to specify these parameters (in milliseconds):</p>
+<ul>
+  <li>total simulation time</li>
+  <li>quantum time</li>
+  <li>context switch</li>
+  <li>average process length</li>
+  <li>average creation length</li>
+  <li>IO bound process time</li>
+  <li>average IO service time</li>
+</ul>
+
+<p>length of time from average times were randomly generated from a standard deviation</p>
+
+<hr />
+
+<p><strong>running params1.txt</strong></p>
+
+<p><img src="https://media.giphy.com/media/erZuhUa1Rey9jYqOdj/giphy.gif" alt="sim1" /></p>
+
+<hr />
+
+<p><strong>results of params1.txt</strong></p>
+
+<p><img src="https://media.giphy.com/media/FXQXOLMK04jjzxgciq/giphy.gif" alt="sim3" /></p>
+
+<p>The results show the overall statistics, as well as the statistics for CPU-bound and IO-bound processes individually</p>
+
+<p><a href="https://github.com/spoisseroux/cs371scheduler/tree/main/cs371scheduler">[code]</a></p>
+
 
 		
 
@@ -93,7 +125,7 @@ made using python and turtle<br />
 <!--	 -->
 <!--	</hr></br> -->
 <!--	 -->
-	<p>&copy; Spencer Poisseroux 2020</p>
+	<p>&copy; Spencer Poisseroux 2021</p>
 	
 	</br>
 	
