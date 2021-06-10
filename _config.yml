@@ -9,7 +9,7 @@ url: "https://spoisseroux.github.io" # the base hostname & protocol for your sit
 twitter_username: spoisseroux
 github_username:  spoisseroux
 
-theme: no-style-please
+#theme: no-style-please
 
 #disqus_shortname: YourDisqusShortname
 
