@@ -11,12 +11,13 @@ permalink: /about/
 
 -----------------------------------------------------------
 
-**currently enrolled: <!--（今学期のコース）-->**
+<!-- **currently enrolled:（今学期のコース)**
 [Networks and the Internet, 
 Software Engineering,
 Unreal Engine Development, 
 Film Photography,
 Principles of Design]
+-->
 
 **proficient in:　<!--（技術）: -->**
 [Python,
@@ -29,14 +30,19 @@ Javascript,
 HTML/CSS,
 Processing3,
 Assembly x86,
-Computer Organization,
+Computer Architecture,
 Unity,
 Unreal,
 MAXmsp,
 Ableton Live 10,
 Logic Pro X,
 Blender,
-Adobe Creative Suite,
+InDesign,
+After Effects,
+Premiere Pro,
+Lightroom,
+Photoshop,
+Illustrator,
 Japanese]
 
 
