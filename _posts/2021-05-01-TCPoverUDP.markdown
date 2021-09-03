@@ -34,7 +34,6 @@ diff FILENAME RECEIVED_FILE
 **Code**
 
 Client.py
-<details>
     ```python
         #!/usr/bin/env python
         from socket import *
@@ -358,7 +357,6 @@ Client.py
 
         main()
     ```
-</details>
 
 Server.py
 <details>
