@@ -10,9 +10,12 @@ works created for digital design II course
 
 **fifty elements**
 
+<!-- 
 <p align="center">
     <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 </p> 
+-->
+<img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
 
 [[view]](https://i.imgur.com/bUeaZJ7.jpg)
 
