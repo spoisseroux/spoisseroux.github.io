@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "[Ableton] Sounds"
-date:   2020-10-13 19:48:10
+title: "[Ableton] Sounds"
+date: 2020-10-13 19:48:10
 ---
 
 various sounds, mostly monthly mixes i use as a beacon for each month
 
------------------------------------------------------------
+---
 
 **monthly mixes**
+
+<!-- oct 21 -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Foct212530waitingroom%2F" frameborder="0" ></iframe>
 
 <!-- aug 21 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Faug212105feedbacker%2F" frameborder="0" ></iframe>
@@ -28,7 +31,6 @@ various sounds, mostly monthly mixes i use as a beacon for each month
 <!-- mar 21 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fmar21_mix%2F" frameborder="0" ></iframe>
 
-
 <!-- feb 21 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Ffeb21_mix%2F" frameborder="0" ></iframe>
 
@@ -47,7 +49,7 @@ various sounds, mostly monthly mixes i use as a beacon for each month
 <!-- sep 20 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Fsep20_mix%2F" frameborder="0" ></iframe>
 
------------------------------------------------------------
+---
 
 **themed mixes**
 
