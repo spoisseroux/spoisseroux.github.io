@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ableton] Notes"
+title: "[Ableton] Short songs"
 date: 2021-01-03 19:48:10
 ---
 
