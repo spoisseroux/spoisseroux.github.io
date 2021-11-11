@@ -15,17 +15,19 @@ This project also plays with the concept of foley on sounds that cannot be extra
 
 -----------------------------------------------------------
 
-*patches*
-
-main patch
+**main patch**
 <img src="https://i.imgur.com/8uswA9C.png">
 this patch is the main controller. it allows samples to be triggered, and also allows dynamic setting of interval time (how long before the samples loop again). individual sample volumes can also be adjusted here. the logic for the timing of samples also lives here.
 
-sample patch
+-----------------------------------------------------------
+
+**sample patch**
 <img src="https://i.imgur.com/PLIY86l.png">
 here samples can be loaded in to be triggered. when the playback finishes the time marker is brought to the beginning to be ready for playback again. when a bang is received from the main patch the sample plays. every sample follows this format from the example string7 patch. 
 
-piano patch
+-----------------------------------------------------------
+
+**piano patch**
 <img src="https://i.imgur.com/ET5CfRV.png">
 here random midi notes are generated and passed through to ableton live where a piano instrument then outputs. the button in main acts as an on/off switch.
 
