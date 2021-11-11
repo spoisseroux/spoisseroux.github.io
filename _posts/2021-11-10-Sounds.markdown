@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Ableton] Sounds"
-date: 2021-10-13 19:48:10
+date: 2021-11-10 19:48:10
 ---
 
 various sounds, mostly monthly mixes i use as a beacon for each month
@@ -9,6 +9,9 @@ various sounds, mostly monthly mixes i use as a beacon for each month
 ---
 
 **monthly mixes**
+
+<!-- nov 21 -->
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fkeehar%2Fnov2110001%2F" frameborder="0" ></iframe>
 
 <!-- oct 21 -->
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fkeehar%2Foct212530waitingroom%2F" frameborder="0" ></iframe>
