@@ -12,27 +12,39 @@ feel free to use any of the audio
 <!-- change view to preview in link -->
 <!-- set permissions to anyone with link can view -->
 
-<img src="https://i.imgur.com/IEy6nU6.jpg" width="300">
+<img src="https://i.imgur.com/IEy6nU6.jpg" width="600">
 
 side a
 <iframe
-   frameborder="1"
+   frameborder="0"
+   width="500"
+   height="100"
+   backgroundColor = "transparent"
+   allowTransparency="true"
    src="https://drive.google.com/file/d/1Kef4oCNRoLw15Orp19bUumIMh_AEy2FQ/preview?usp=sharing">
 </iframe>
 
 side b
 <iframe
-   frameborder="1"
+   frameborder="0"
+   width="500"
+   height="100"
+   backgroundColor = "transparent"
+   allowTransparency="true"
    src="https://drive.google.com/file/d/1X5iPh2AM5bWyzdAwOpZoZk8yMBBd2MyS/preview?usp=sharing">
 </iframe>
 
 ---
 
-<img src="https://i.imgur.com/Tf9cEPs.jpg" width="300">
+<img src="https://i.imgur.com/Tf9cEPs.jpg" width="600">
 
 side a
 <iframe
-   frameborder="1"
+   frameborder="0"
+   width="500"
+   height="100"
+   backgroundColor = "transparent"
+   allowTransparency="true"
    src="https://drive.google.com/file/d/1FI87D5ps9wzX9JvQ7Adr6yrMzgIUl11H/preview?usp=sharing">
 </iframe>
 
