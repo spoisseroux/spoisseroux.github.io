@@ -11,7 +11,7 @@ date:   2021-09-07 19:48:10
 based on Luc Ferrari's Didascalies\
 all puredata patches by myself\
 samples created and manipulated in ableton live\
-this project also plays with the concept of foley on sounds that cannot be extracted from didascalies itself\
+this project also plays with the concept of foley on sounds that cannot be extracted from didascalies itself
 
 -----------------------------------------------------------
 
