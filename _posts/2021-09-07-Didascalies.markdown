@@ -31,4 +31,8 @@ here samples can be loaded in to be triggered. when the playback finishes the ti
 <img src="https://i.imgur.com/ET5CfRV.png">
 here random midi notes are generated and passed through to ableton live where a piano instrument then outputs. the button in main acts as an on/off switch.
 
+-----------------------------------------------------------
 
+**ableton**
+<img src="https://i.imgur.com/MO3Ef0u.png">
+midi notes from the drunkenPiano patch are inputted to ableton, where they then go through a dorian mode scale midi effect and then a grand piano instrument.
