@@ -8,12 +8,25 @@ date:   2021-09-01 19:48:10
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DCWmeloQOI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-based on Luc Ferrari's Didascalies
-all puredata patches by myself
-samples created and manipulated in ableton live
-this project also plays with the concept of foley on sounds that cannot be extracted from didascalies itself
+Based on Luc Ferrari's Didascalies
+All puredata patches by myself
+Samples created and manipulated in ableton live
+This project also plays with the concept of foley on sounds that cannot be extracted from didascalies itself
 
 -----------------------------------------------------------
 
+*patches*
+
+main patch
+<img src="https://i.imgur.com/8uswA9C.png" width="400">
+this patch is the main controller. it allows samples to be triggered, and also allows dynamic setting of interval time (how long before the samples loop again). individual sample volumes can also be adjusted here. the logic for the timing of samples also lives here.
+
+sample patch
+<img src="https://i.imgur.com/PLIY86l.png" width="400">
+here samples can be loaded in to be triggered. when the playback finishes the time marker is brought to the beginning to be ready for playback again. when a bang is received from the main patch the sample plays. every sample follows this format from the example string7 patch. 
+
+piano patch
+<img src="https://i.imgur.com/ET5CfRV.png" width="400">
+here random midi notes are generated and passed through to ableton live where a piano instrument then outputs. the button in main acts as an on/off switch.
 
 
