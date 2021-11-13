@@ -6,7 +6,7 @@ date:   2021-05-01 19:48:10
 
 **Purpose**
 
-To provide a TCP-like transport protocol over UDP with reliable transfer, relevant headers, and connection establishment.\
+To provide a TCP-like transport protocol over UDP with reliable transfer, relevant headers, and connection establishment.\ This results in a faster transfer with the same reliability as TCP.
 
 Created with Python 2.X using no external libraries\
 In collaboration with Jack Bonnelycke
