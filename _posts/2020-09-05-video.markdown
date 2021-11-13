@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "[Premiere] Video works"
+title:  "[Premiere] Video/Audio works"
 date:   2020-09-05 19:48:10
 ---
 
-works created for a video I course
+video + audio works composed in adobe's premiere pro software
 
 -----------------------------------------------------------
 
+<!--
 **clip montage**
 
 [![video collage](https://media.giphy.com/media/TLCWrI3T1CUCgeCEQN/giphy.gif)](https://youtu.be/cw_o9cyiajI)
@@ -16,13 +17,15 @@ works created for a video I course
     <summary>watch</summary>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cw_o9cyiajI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </details>
-<!-- [[watch]](https://youtu.be/cw_o9cyiajI) -->
+[[watch]](https://youtu.be/cw_o9cyiajI)
 
 a montage of about one minute using clips of only one or a few seconds each; presented without sound
 
------------------------------------------------------------
 
-**clip montage + sound**
+-----------------------------------------------------------
+-->
+
+**clip montage + no original sound**
 
 [![video sound](https://media.giphy.com/media/gvU8Ar4BzPIPWMVmj7/giphy.gif)](https://youtu.be/77J2qe44VPI)
 
@@ -32,8 +35,9 @@ a montage of about one minute using clips of only one or a few seconds each; pre
 </details>
 <!-- [[watch]](https://youtu.be/77J2qe44VPI) -->
 
-reworked the sound of the montage using no audio from the original videos and using only found sounds
-explored topics of foley and demonstration through sound
+a video compilation of clips from films i had enjoyed recently\
+the purpose was to experiment with foley but not using any original audio from the clips\
+i aimed to build a dream-like environment with both visuals and audio
 
 -----------------------------------------------------------
 

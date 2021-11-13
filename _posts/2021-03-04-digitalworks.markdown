@@ -1,23 +1,10 @@
 ---
 layout: post
-title:  "[Photoshop] Digital design"
-date:   2020-09-04 19:48:10
+title:  "[Photoshop] Digital works"
+date:   2021-03-04 19:48:10
 ---
 
-works created for digital design II course
-
------------------------------------------------------------
-
-**fifty elements**
-
-<!-- 
-<p align="center">
-    <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
-</p> 
--->
-<img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
-
-[[view]](https://i.imgur.com/bUeaZJ7.jpg)
+digital works created in adobe's photoshop
 
 -----------------------------------------------------------
 
@@ -33,6 +20,25 @@ works created for digital design II course
 <img src="https://i.imgur.com/OMAmTwz.jpg">
 
 [[view]](https://i.imgur.com/OMAmTwz.jpg)
+
+-----------------------------------------------------------
+
+**AGUIRRRRE fashion show poster**
+
+<img src="https://i.imgur.com/zNpGsNS.jpg" width="400">
+
+-----------------------------------------------------------
+
+**fifty elements**
+
+<!-- 
+<p align="center">
+    <img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
+</p> 
+-->
+<img src="https://i.imgur.com/bUeaZJ7.jpg" width="400" >
+
+[[view]](https://i.imgur.com/bUeaZJ7.jpg)
 
 -----------------------------------------------------------
 

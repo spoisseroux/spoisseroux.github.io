@@ -7,6 +7,8 @@ date: 2021-06-12 19:48:10
 growing collection of tape loops made by me\
 feel free to use any of the audio 
 
+used in some of my diaries\
+
 ---
 
 <!-- change view to preview in link -->
@@ -14,7 +16,7 @@ feel free to use any of the audio
 
 <img src="https://i.imgur.com/IEy6nU6.jpg" width="600">
 
-side a
+sides a and b
 <iframe
    style="background: #FFFFFF;"
    allowTransparency="true"
@@ -23,8 +25,6 @@ side a
    height="100"
    src="https://drive.google.com/file/d/1Kef4oCNRoLw15Orp19bUumIMh_AEy2FQ/preview?usp=sharing">
 </iframe>
-
-side b
 <iframe
    style="background: #FFFFFF;"
    allowTransparency="true"
