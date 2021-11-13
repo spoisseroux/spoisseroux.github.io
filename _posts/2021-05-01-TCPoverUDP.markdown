@@ -6,7 +6,12 @@ date:   2021-05-01 19:48:10
 
 **Purpose**
 
-To provide a TCP-like transport protocol over UDP with reliable transfer, relevant headers, and connection establishment.
+To provide a TCP-like transport protocol over UDP with reliable transfer, relevant headers, and connection establishment.\
+
+Created with Python 2.X using no external libraries\
+In collaboration with Jack Bonnelycke
+
+[[github]](https://github.com/spoisseroux/CS488S21PROJS/tree/main/project3)
 
 -----------------------------------------------------------
 
@@ -29,7 +34,7 @@ cat FILENAME | python3 ./client.py HOSTNAME-OR-IP 5000
 + Compare the two with:
 diff FILENAME RECEIVED_FILE
 
-[[repo]](https://github.com/spoisseroux/CS488S21PROJS/tree/main/project3)
+[[github]](https://github.com/spoisseroux/CS488S21PROJS/tree/main/project3)
 
 -----------------------------------------------------------
 

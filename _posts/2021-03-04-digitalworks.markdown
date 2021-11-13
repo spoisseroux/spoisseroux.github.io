@@ -8,24 +8,25 @@ digital works created in adobe's photoshop
 
 -----------------------------------------------------------
 
+**virtuality concepts** 
+
+<img src="https://i.imgur.com/OMAmTwz.jpg">
+
+[[view]](https://i.imgur.com/OMAmTwz.jpg)
+
 **virtuality pages**
 
 <img src="https://i.imgur.com/Bgx4KlW.jpg">
 
 [[view]](https://i.imgur.com/Bgx4KlW.jpg)
 
-
-**concepts** 
-
-<img src="https://i.imgur.com/OMAmTwz.jpg">
-
-[[view]](https://i.imgur.com/OMAmTwz.jpg)
-
 -----------------------------------------------------------
 
 **AGUIRRRRE fashion show poster**
 
 <img src="https://i.imgur.com/zNpGsNS.jpg" width="400">
+
+[[view]](https://i.imgur.com/zNpGsNS.jpg)
 
 -----------------------------------------------------------
 
