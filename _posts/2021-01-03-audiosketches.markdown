@@ -8,6 +8,9 @@ an inexhaustive list of short sketches made in ableton live using MIDI instrumen
 
 ---
 
+<!-- amor -->
+ <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/ZAMyAgfFEEYt3iVtNl0jpw/669939736298897408" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://liquidkeehar.tumblr.com/post/669939736298897408/amor">https://liquidkeehar.tumblr.com/post/669939736298897408/amor</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+
 <!-- video game music aug 20 -->
 <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/ZAMyAgfFEEYt3iVtNl0jpw/626942999204593664" data-did="542d9d1e0ecd45b6b635f0ef2466755d57efb28a"><a href="https://liquidkeehar.tumblr.com/post/626942999204593664/2o-aug-2o2o">https://liquidkeehar.tumblr.com/post/626942999204593664/2o-aug-2o2o</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
 
