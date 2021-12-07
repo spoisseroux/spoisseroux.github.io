@@ -4,7 +4,7 @@ title: "[Ableton] Audio sketches"
 date: 2021-01-03 19:48:10
 ---
 
-an inexhaustive list of short sketches made in ableton live using MIDI instruments, MIDI effects, audio effects, some plugins, clips, etc.
+an inexhaustive list of short sketches made in ableton live using MIDI instruments, MIDI effects, audio effects, plugins, clips, original pd sketches, etc.
 
 ---
 
