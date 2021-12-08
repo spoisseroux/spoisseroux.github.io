@@ -8,6 +8,9 @@ an inexhaustive list of short sketches made in ableton live using MIDI instrumen
 
 ---
 
+<!-- radoi static song -->
+ <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/ZAMyAgfFEEYt3iVtNl0jpw/670046042409123840" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://liquidkeehar.tumblr.com/post/670046042409123840/open">https://liquidkeehar.tumblr.com/post/670046042409123840/open</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+
 <!-- amor -->
  <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/ZAMyAgfFEEYt3iVtNl0jpw/669939736298897408" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://liquidkeehar.tumblr.com/post/669939736298897408/amor">https://liquidkeehar.tumblr.com/post/669939736298897408/amor</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
 
