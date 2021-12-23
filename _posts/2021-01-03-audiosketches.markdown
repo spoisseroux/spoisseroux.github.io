@@ -8,6 +8,10 @@ an inexhaustive list of short sketches made in ableton live using MIDI instrumen
 
 ---
 
+<!-- Dry EP -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r5AotsubjsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <!-- radoi static song -->
 <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/ZAMyAgfFEEYt3iVtNl0jpw/670047124521680896" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://liquidkeehar.tumblr.com/post/670047124521680896/open">https://liquidkeehar.tumblr.com/post/670047124521680896/open</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
 
