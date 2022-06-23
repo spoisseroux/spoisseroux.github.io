@@ -4,7 +4,7 @@ description: >
     Spencer Poisseroux
 author: Spencer Poisseroux
 email: spoisseroux@me.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/spoisseroux.github.io" # the subpath of your site, e.g. /blog
 url: "https://spoisseroux.github.io" # the base hostname & protocol for your site
 twitter_username: spoisseroux
 github_username:  spoisseroux
