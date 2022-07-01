@@ -1,13 +1,13 @@
 # Site settings
 title: Spencer Poisseroux
 description: >
-    Spencer Poisseroux
+  Spencer Poisseroux
 author: Spencer Poisseroux
 email: spoisseroux@me.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spoisseroux.github.io" # the base hostname & protocol for your site
 twitter_username: spoisseroux
-github_username:  spoisseroux
+github_username: spoisseroux
 
 #theme: no-style-please
 
@@ -18,7 +18,7 @@ include: [_pages]
 markdown: kramdown
 permalink: /:year/:month/:title
 sass:
-    style: compressed
+  style: compressed
 
 plugins:
   - jemoji
@@ -28,9 +28,9 @@ plugins:
 # - amp-jekyll # Acceletrated Mobile Pages
 
 jekyll_analytics:
-    GoogleAnalytics:
-        id: UA-154246167-1
-        anonymizeIp: false
+  GoogleAnalytics:
+    id: UA-154246167-1
+    anonymizeIp: false
 
 # AMP Settings
 # ampdir: amp/

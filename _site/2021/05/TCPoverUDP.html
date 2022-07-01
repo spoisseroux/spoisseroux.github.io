@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>[Python] TCP transfer clone over UDP - Spencer Poisseroux</title>
+    <meta name="description" content="Purpose">
+
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese"rel="stylesheet">
+    <link rel="stylesheet" href="//css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="http://localhost:4000//2021/05/TCPoverUDP">
+    <link rel="alternate" type="application/rss+xml" title="Spencer Poisseroux" href="http://localhost:4000//feed.xml">
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-154246167-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+    
+</head>
+
+    <body>
+        <main class="u-container">
+        <div class="c-page">
+		<article class="c-article">
+   	 	<header class="c-page__header">
+        <h1>Spencer Poisseroux
+</h1>
+	
+    <p>
+        <a href="//">&lt;&ndash;&ndash; Back</a>
+    </p>
+	
+</header>
+
+    	<div class="c-article__main">
+        <article class="c-article">
+    <header class="c-article__header">
+        <h1 class="c-article__title">[Python] TCP transfer clone over UDP</h1>
+        <p class="c-article__time"><time datetime="2021-05-01T15:48:10-04:00" itemprop="datePublished">May 1, 2021</time></p>
+    </header>
+    <div class="c-article__main">
+        <p><strong>Purpose</strong></p>
+
+<p>To provide a TCP-like transport protocol over UDP with reliable transfer, relevant headers, and connection establishment<br />
+This results in a faster transfer with the same reliability as TCP</p>
+
+<p>Created with Python 2.X using no external libraries<br />
+In collaboration with Jack Bonnelycke</p>
+
+<p><strong><a href="https://github.com/spoisseroux/CS488S21PROJS/tree/main/project3">[github]</a></strong></p>
+
+<hr />
+
+<p><strong>Receiver Design</strong></p>
+
+<p><img src="https://i.imgur.com/Pd8N9ah.png" width="400" /></p>
+
+<hr />
+
+<p><strong>Setup</strong> 
+(Linux environment required)</p>
+
+<ul>
+  <li>To begin using our TCP-like Transport Protocol over UDP, please clone this repository into wherever you would like it saved.</li>
+  <li>Open a terminal in the location you would like to receive the file, with the repository cloned.</li>
+  <li>Copy the file you would like to send into the cloned repository’s project3/src/.</li>
+  <li>In the receiving terminal, run the following
+python3 ./server.py 5000 &gt; RECEIVED_FILE</li>
+  <li>In the sending terminal, run the following
+cat FILENAME | python3 ./client.py HOSTNAME-OR-IP 5000</li>
+  <li>Compare the two with:
+diff FILENAME RECEIVED_FILE</li>
+</ul>
+
+<p><strong><a href="https://github.com/spoisseroux/CS488S21PROJS/tree/main/project3">[github]</a></strong></p>
+
+<hr />
+
+<p><strong>Code</strong></p>
+
+<p>Client.py</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python
+</span><span class="kn">from</span> <span class="nn">socket</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">getsizeof</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+
+<span class="c1">#print("first line")
+</span>
+<span class="n">host</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">total_kb</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#keep track for stats
+</span><span class="n">buf</span> <span class="o">=</span> <span class="mi">512</span>
+<span class="n">addr</span> <span class="o">=</span> <span class="p">(</span><span class="n">host</span><span class="p">,</span><span class="n">port</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">)</span>
+<span class="n">end_time</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">seqNum</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">conID</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">payloadSize</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">finished</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="c1">#s.bind((host,port))
+</span>
+<span class="c1">#start timer
+</span><span class="k">global</span> <span class="n">start_time</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">resend</span><span class="p">(</span><span class="n">packet</span><span class="p">):</span>
+    <span class="c1">#resend lost packet
+</span>    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">addr</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span><span class="p">,</span> <span class="n">sentPayload</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"DROP "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">" DUP"</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span><span class="n">addr</span><span class="p">)</span>
+    <span class="n">receive</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span> <span class="c1">#go to receive lost packet
+</span>
+<span class="k">def</span> <span class="nf">resendSYNACK</span><span class="p">(</span><span class="n">packet</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">addr</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span><span class="p">,</span> <span class="n">sentPayload</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"DROP "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">" DUP"</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span><span class="n">addr</span><span class="p">)</span>
+    <span class="n">receiveSYNACK</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">receiveSYNACK</span><span class="p">(</span><span class="n">packet</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">host</span>
+    <span class="k">global</span> <span class="n">port</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">conID</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">s</span><span class="p">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">,</span> <span class="n">addr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">recvfrom</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+        <span class="n">recvdSeqNum</span><span class="p">,</span> <span class="n">recvdAck</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="n">recvdFlag</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"RECV "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">conID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">!=</span> <span class="mi">6</span> <span class="ow">or</span> <span class="n">recvdAck</span> <span class="o">!=</span> <span class="n">seqNum</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">resendSYNACK</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span>
+        <span class="n">resendSYNACK</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">receive</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span> <span class="n">timer</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">host</span>
+    <span class="k">global</span> <span class="n">port</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">payloadSize</span>
+    <span class="k">global</span> <span class="n">finished</span>
+
+    <span class="c1">#print("in receive()")
+</span>    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">timer</span> <span class="o">!=</span> <span class="mf">0.5</span><span class="p">):</span>
+            <span class="n">s</span><span class="p">.</span><span class="n">settimeout</span><span class="p">(</span><span class="n">timer</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">s</span><span class="p">.</span><span class="n">settimeout</span><span class="p">(</span><span class="n">timer</span><span class="p">)</span>
+        <span class="n">expectedSeqNum</span> <span class="o">=</span> <span class="n">seqNum</span>
+        <span class="n">data</span><span class="p">,</span><span class="n">addr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">recvfrom</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+        <span class="c1"># TODO split header + payload decoded
+</span>        <span class="n">recvdSeqNum</span><span class="p">,</span> <span class="n">recvdAck</span><span class="p">,</span> <span class="n">recvdConID</span><span class="p">,</span> <span class="n">recvdFlag</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+        <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span><span class="p">,</span> <span class="n">sentPayload</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"RECV "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">expectedSeqNum</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">expectedSeqNum</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="k">return</span>
+            <span class="c1">#if ((recvdAck != expectedSeqNum) or recvdConID != conID) or (recvdFlag != 5):
+</span>            <span class="c1">#    resend(packet)
+</span>            <span class="c1">#seqNum = expectedSeqNum
+</span>            <span class="c1">#return
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">expectedSeqNum</span> <span class="o">=</span> <span class="n">seqNum</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">expectedSeqNum</span> <span class="o">&gt;=</span> <span class="mi">204801</span><span class="p">):</span> <span class="c1">#after 204800 is zero
+</span>            <span class="n">expectedSeqNum</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">204800</span> <span class="o">-</span> <span class="n">expectedSeqNum</span><span class="p">)</span>
+        <span class="c1">#check if received correct data (ACK)
+</span>        <span class="c1">#print("receive if state (recvdSeq, seqNum, recvdAck, expected SeqNum)" + str(recvdSeqNum) + " " + str(seqNum) + " " +  str(recvdAck) + " " + str(expectedSeqNum))
+</span>        <span class="k">if</span> <span class="p">((</span><span class="n">recvdAck</span> <span class="o">!=</span> <span class="n">expectedSeqNum</span><span class="p">)</span>
+            <span class="ow">or</span> <span class="p">(</span><span class="n">recvdConID</span> <span class="o">!=</span> <span class="n">conID</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">)):</span>
+            <span class="c1">#print("if final\n)")
+</span>            <span class="n">resend</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span> <span class="c1">#ACK got lost
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">timer</span> <span class="o">==</span> <span class="mf">0.5</span><span class="p">):</span>
+            <span class="n">resend</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+    <span class="n">seqNum</span> <span class="o">=</span> <span class="n">expectedSeqNum</span>
+
+<span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">packet</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">total_kb</span>
+    <span class="k">global</span> <span class="n">host</span>
+    <span class="k">global</span> <span class="n">port</span>
+    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span><span class="p">,</span> <span class="n">sentPayload</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span><span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span><span class="n">addr</span><span class="p">)</span>
+    <span class="n">total_kb</span> <span class="o">+=</span> <span class="n">buf</span> <span class="c1">#track kb sent
+</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1">#get data, call send, recv after getting data in loop
+</span>    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">end_time</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">payloadSize</span>
+    <span class="k">global</span> <span class="n">finished</span>
+
+    <span class="c1">#print("in getdata() init")
+</span>
+    <span class="n">completeHandshakePacket</span> <span class="o">=</span> <span class="n">handshake</span><span class="p">()</span>
+    <span class="n">receive</span><span class="p">(</span><span class="n">completeHandshakePacket</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+    <span class="c1">#print("got data")
+</span>    <span class="n">packet</span> <span class="o">=</span> <span class="n">buildStandardHeader</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">payloadSize</span>
+    <span class="c1">#print(seqNum)
+</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="c1">#print("in getdata() while loop")
+</span>            <span class="n">s</span><span class="p">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+            <span class="c1">#seqNum = seqNum + 1
+</span>            <span class="n">send</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span> <span class="c1">#send data
+</span>            <span class="n">receive</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span> <span class="c1">#receive ack for sent data
+</span>            <span class="c1">#seqNum = seqNum + payloadSize
+</span>            <span class="k">if</span> <span class="p">(</span><span class="n">seqNum</span> <span class="o">&gt;=</span> <span class="mi">204800</span><span class="p">):</span> <span class="c1">#make sure seqnum never goes above 9
+</span>                <span class="n">seqNum</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">204800</span> <span class="o">-</span> <span class="n">seqNum</span><span class="p">)</span> <span class="c1">#TODO IS THIS RIGHT?
+</span>            <span class="n">data</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="n">buildStandardHeader</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">payloadSize</span>
+        <span class="n">packet</span> <span class="o">=</span> <span class="n">buildFinHeader</span><span class="p">()</span>
+        <span class="n">send</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+        <span class="n">receive</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+        <span class="n">finTimerStart</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">finTimerDiff</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="k">while</span> <span class="p">((</span><span class="n">finTimerDiff</span> <span class="o">-</span> <span class="n">finTimerStart</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">finTimerDiff</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="n">receive</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="n">buildFinAckHeader</span><span class="p">()</span>
+            <span class="n">send</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+        <span class="c1"># try w/ timeout 2
+</span>        <span class="c1"># receive ack from server
+</span>        <span class="c1"># receive fin's from server and ack em
+</span>
+    <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span>
+        <span class="n">s</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">printStats</span><span class="p">():</span>
+    <span class="c1">#end timer
+</span>
+    <span class="n">elapsed_time</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
+
+    <span class="c1">#statistics
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">elapsed_time</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">elapsed_time</span> <span class="o">=</span> <span class="mf">0.001</span>
+    <span class="n">kbRate</span> <span class="o">=</span> <span class="p">(</span><span class="n">total_kb</span> <span class="o">/</span> <span class="mi">125</span><span class="p">)</span> <span class="o">/</span> <span class="n">elapsed_time</span>
+    <span class="n">kbRate</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s">"%0.2f"</span> <span class="o">%</span> <span class="p">(</span><span class="n">kbRate</span><span class="p">))</span>
+    <span class="n">elapsed_time</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s">"%0.3f"</span> <span class="o">%</span> <span class="p">(</span><span class="n">elapsed_time</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">buildStandardHeader</span><span class="p">(</span><span class="n">payload</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">payloadSize</span>
+
+    <span class="n">payloadSize</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">payload</span><span class="p">.</span><span class="n">encode</span><span class="p">()</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">buildFirstHandshakeHeader</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="n">emptyPayload</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">emptyPayload</span><span class="p">)</span>
+    <span class="c1">#print("FIRST HANDSHAKE HEADER")
+</span>    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">buildThirdHandshakeHeader</span><span class="p">(</span><span class="n">payload</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">payloadSize</span>
+
+    <span class="c1">#payload = bytes(payload, 'utf-8')
+</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">payload</span><span class="p">.</span><span class="n">encode</span><span class="p">()</span>
+    <span class="n">payloadSize</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span>
+    <span class="c1">#print("THIRD HANDSHAKE HEADER")
+</span>    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">buildFinHeader</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">emptyPayload</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">emptyPayload</span><span class="p">)</span>
+    <span class="c1">#print("FIN HEADER")
+</span>    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">buildFinAckHeader</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">emptyPayload</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">emptyPayload</span><span class="p">)</span>
+    <span class="c1">#TODO WHAT IS SEQNUM
+</span>    <span class="c1">#print("FIN ACK HEADER")
+</span>    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">handshake</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="n">initpacket</span> <span class="o">=</span> <span class="n">buildFirstHandshakeHeader</span><span class="p">()</span>
+    <span class="n">send</span><span class="p">(</span><span class="n">initpacket</span><span class="p">)</span>
+    <span class="c1">#print("init" + str(seqNum))
+</span>    <span class="n">receiveSYNACK</span><span class="p">(</span><span class="n">initpacket</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+    <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">secondpacket</span> <span class="o">=</span> <span class="n">buildThirdHandshakeHeader</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">send</span><span class="p">(</span><span class="n">secondpacket</span><span class="p">)</span>
+    <span class="c1">#print("init2" + str(seqNum) + " data " + str(data))
+</span>    <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">payloadSize</span>
+    <span class="k">return</span> <span class="n">secondpacket</span>
+
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Server.py</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">socket</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="nn">select</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">host</span> <span class="o">=</span> <span class="s">"127.0.0.1"</span>
+<span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">)</span>
+<span class="n">s</span><span class="p">.</span><span class="n">bind</span><span class="p">((</span><span class="n">host</span><span class="p">,</span><span class="n">port</span><span class="p">))</span>
+<span class="n">addr</span> <span class="o">=</span> <span class="p">(</span><span class="n">host</span><span class="p">,</span><span class="n">port</span><span class="p">)</span>
+<span class="n">buf</span><span class="o">=</span><span class="mi">524</span>
+<span class="n">seqNum</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">conID</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">payloadSize</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">prevFlag</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">recvdFlag</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">prevSize</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">prevSeq</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">firstHandshakeResend</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">recieve</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">prevFlag</span>
+    <span class="k">global</span> <span class="n">recvdFlag</span>
+    <span class="k">global</span> <span class="n">prevSize</span>
+    <span class="k">global</span> <span class="n">prevSeq</span>
+    <span class="k">global</span> <span class="n">firstHandshakeResend</span>
+
+    <span class="n">data</span><span class="p">,</span><span class="n">addr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">recvfrom</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+    <span class="n">prevFlag</span> <span class="o">=</span> <span class="n">recvdFlag</span>
+    <span class="n">recvdPayload</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack_from</span><span class="p">(</span><span class="s">'512s'</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="mi">12</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">recvdPayload</span> <span class="o">=</span> <span class="n">recvdPayload</span><span class="p">.</span><span class="n">decode</span><span class="p">().</span><span class="n">rstrip</span><span class="p">(</span><span class="s">'</span><span class="se">\x00</span><span class="s">'</span><span class="p">)</span>
+    <span class="n">recvdSeqNum</span><span class="p">,</span> <span class="n">recvdAck</span><span class="p">,</span> <span class="n">recvdConID</span><span class="p">,</span> <span class="n">recvdFlag</span><span class="p">,</span> <span class="n">recvdPayloadNull</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh512s'</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="n">recvPrint</span> <span class="o">=</span> <span class="s">"RECV "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span>
+
+    <span class="c1">#recvdPayload = recvdPayload.decode()
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">prevFlag</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">s</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span> <span class="c1"># first handshake
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">firstHandshakeResend</span> <span class="o">==</span> <span class="bp">True</span><span class="p">):</span>
+            <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"DROP "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdConID</span><span class="p">)</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="n">recvPrint</span> <span class="o">=</span> <span class="n">recvPrint</span> <span class="o">+</span> <span class="s">" DUP"</span>
+        <span class="n">conID</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+        <span class="n">prevSize</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">firstHandshakeResend</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="c1"># TODO elif recvdFlag ==4 and prevFlag == 1
+</span>    <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">recvPrint</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">finning</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="p">((</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">or</span> <span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">conID</span> <span class="o">==</span> <span class="n">recvdConID</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">recvdSeqNum</span> <span class="o">==</span> <span class="n">seqNum</span><span class="p">):</span>
+            <span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">recvdPayload</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">recvdSeqNum</span> <span class="o">==</span> <span class="n">prevSeq</span><span class="p">):</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">prevSeq</span>
+            <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"DROP "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recvdConID</span><span class="p">)</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+            <span class="c1"># retransmission
+</span>        <span class="n">prevSize</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">recvdPayload</span><span class="p">)</span>
+    <span class="c1"># elif recvdFlag == 1 TODO
+</span>    <span class="n">prevSeq</span> <span class="o">=</span> <span class="n">seqNum</span>
+    <span class="c1"># TODO prevFlag = recvdFlag
+</span>
+<span class="k">def</span> <span class="nf">finning</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">prevFlag</span>
+    <span class="k">global</span> <span class="n">recvdFlag</span>
+
+    <span class="n">packet</span> <span class="o">=</span> <span class="n">buildFinAckHeader</span><span class="p">()</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span> <span class="n">addr</span><span class="p">)</span>
+    <span class="c1">#recv all the stuff
+</span>    <span class="n">packet</span> <span class="o">=</span> <span class="n">buildFinHeader</span><span class="p">()</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span><span class="n">addr</span><span class="p">)</span>
+    <span class="n">recieve</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">buildFinHeader</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">buildFinAckHeader</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">ackNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">prevSize</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="n">ackNum</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">header</span>
+
+<span class="k">def</span> <span class="nf">send</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">s</span>
+    <span class="k">global</span> <span class="n">total_kb</span>
+    <span class="k">global</span> <span class="n">host</span>
+    <span class="k">global</span> <span class="n">port</span>
+    <span class="k">global</span> <span class="n">buf</span>
+    <span class="k">global</span> <span class="n">addr</span>
+    <span class="k">global</span> <span class="n">recvdFlag</span>
+    <span class="k">global</span> <span class="n">prevSize</span>
+    <span class="k">global</span> <span class="n">conID</span>
+    <span class="k">global</span> <span class="n">seqNum</span>
+
+    <span class="n">ackNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">prevSize</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ackNum</span> <span class="o">&gt;=</span> <span class="mi">204800</span><span class="p">):</span> <span class="n">ackNum</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">204800</span> <span class="o">-</span> <span class="n">ackNum</span><span class="p">)</span>
+
+    <span class="c1">#dummyPayload = bytearray(512)
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">packet</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="n">ackNum</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span> <span class="c1">#final
+</span>        <span class="k">pass</span> <span class="c1">#TODO
+</span>        <span class="c1"># define and send ack
+</span>        <span class="c1"># packet = defined fin
+</span>    <span class="c1">#elif recvdFlag == 4 and prev == 1 then return
+</span>    <span class="k">elif</span> <span class="p">(</span><span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">recvdFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">packet</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">seqNum</span><span class="p">,</span> <span class="n">ackNum</span><span class="p">,</span> <span class="n">conID</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+    <span class="n">flag</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">sentSeqNum</span><span class="p">,</span> <span class="n">sentAck</span><span class="p">,</span> <span class="n">sentConID</span><span class="p">,</span> <span class="n">sentFlag</span> <span class="o">=</span> <span class="n">struct</span><span class="p">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'iihh'</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK SYN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"FIN"</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">sentFlag</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="s">"ACK FIN"</span>
+    <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"SEND "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentSeqNum</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentAck</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sentConID</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+
+    <span class="n">s</span><span class="p">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span><span class="n">addr</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">seqNum</span> <span class="c1">#init seqnum
+</span>    <span class="k">global</span> <span class="n">prevSize</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">while</span><span class="p">(</span><span class="bp">True</span><span class="p">):</span>
+            <span class="n">s</span><span class="p">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+            <span class="n">recieve</span><span class="p">()</span>
+            <span class="n">send</span><span class="p">()</span>
+            <span class="n">seqNum</span> <span class="o">=</span> <span class="n">seqNum</span> <span class="o">+</span> <span class="n">prevSize</span> <span class="c1">#increase next expected seqNum
+</span>            <span class="k">if</span> <span class="p">(</span><span class="n">seqNum</span> <span class="o">&gt;=</span> <span class="mi">204800</span><span class="p">):</span> <span class="n">seqNum</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">204800</span> <span class="o">-</span> <span class="n">seqNum</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span>
+        <span class="c1">#end
+</span>        <span class="n">s</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="p">.</span><span class="n">stderr</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"File received, exiting.</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">pass</span>
+
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+
+		
+
+    </div>
+    <footer class="c-article__footer">
+        <p>
+        
+        </p>
+    </footer>
+</article>
+
+		
+			
+
+		
+    	</div>
+    	<footer class="c-page__footer">
+<!--	</hr> -->
+<!--	<p>	
+		<script type='text/javascript'>
+			fortune = new Array(2);
+			fortune[0] = 'every drop in the ocean counts';
+			fortune[1] = 'controversy is a part of the nature of art';
+			fortune[2] = 'our cells are speaking to each other';
+
+			index = Math.floor(Math.random() * fortune.length);
+			document.write(fortune[index]+"\n");
+		</script>
+		<noscript>どうしてこうなるんだろう…</noscript>
+	
+</p> -->
+<!--	</br> -->
+<!--	 -->
+<!--	</hr></br> -->
+<!--	 -->
+	<p>&copy; Spencer Poisseroux 2022</p>
+	
+	</br>
+	
+	<p>Follow me on: <a href="https://linkedin.com/in/spoisseroux">LinkedIn</a> & <a href="https://github.com/spoisseroux">Github</a><span class="u-separate"></span> Subscribe: <a href="//feed.xml">RSS</a></p>
+</footer>
+
+</article>
+
+        </main>
+        <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-154246167-1', 'auto');
+   ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>

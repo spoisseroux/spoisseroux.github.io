@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>[Pd] Didascalies - Spencer Poisseroux</title>
+    <meta name="description" content="Didascalies remix puredata performance">
+
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese"rel="stylesheet">
+    <link rel="stylesheet" href="//css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="http://localhost:4000//2021/09/Didascalies">
+    <link rel="alternate" type="application/rss+xml" title="Spencer Poisseroux" href="http://localhost:4000//feed.xml">
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-154246167-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+    
+</head>
+
+    <body>
+        <main class="u-container">
+        <div class="c-page">
+		<article class="c-article">
+   	 	<header class="c-page__header">
+        <h1>Spencer Poisseroux
+</h1>
+	
+    <p>
+        <a href="//">&lt;&ndash;&ndash; Back</a>
+    </p>
+	
+</header>
+
+    	<div class="c-article__main">
+        <article class="c-article">
+    <header class="c-article__header">
+        <h1 class="c-article__title">[Pd] Didascalies</h1>
+        <p class="c-article__time"><time datetime="2021-09-07T15:48:10-04:00" itemprop="datePublished">Sep 7, 2021</time></p>
+    </header>
+    <div class="c-article__main">
+        <p><strong>Didascalies remix puredata performance</strong></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cJaBCuReI00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>based on Luc Ferrari’s Didascalies<br />
+all puredata patches by myself<br />
+samples created and manipulated in ableton live<br />
+this project also plays with the concept of foley on sounds that cannot be extracted from didascalies itself</p>
+
+<hr />
+
+<p><strong>main patch</strong>
+<img src="https://i.imgur.com/8uswA9C.png" />
+this patch is the main controller. it allows samples to be triggered, and also allows dynamic setting of interval time (how long before the samples loop again). individual sample volumes can also be adjusted here. the logic for the timing of samples also lives here.</p>
+
+<hr />
+
+<p><strong>sample patch</strong>
+<img src="https://i.imgur.com/PLIY86l.png" />
+here samples can be loaded in to be triggered. when the playback finishes the time marker is brought to the beginning to be ready for playback again. when a bang is received from the main patch the sample plays. every sample follows this format from the example string7 patch.</p>
+
+<hr />
+
+<p><strong>piano patch</strong>
+<img src="https://i.imgur.com/ET5CfRV.png" />
+here random midi notes are generated and passed through to ableton live where a piano instrument then outputs. the button in main acts as an on/off switch.</p>
+
+<hr />
+
+<p><strong>ableton</strong>
+<img src="https://i.imgur.com/MO3Ef0u.png" />
+midi notes from the drunkenPiano patch are inputted to ableton, where they then go through a dorian mode scale midi effect and then a grand piano instrument.</p>
+
+		
+
+    </div>
+    <footer class="c-article__footer">
+        <p>
+        
+        </p>
+    </footer>
+</article>
+
+		
+			
+
+		
+    	</div>
+    	<footer class="c-page__footer">
+<!--	</hr> -->
+<!--	<p>	
+		<script type='text/javascript'>
+			fortune = new Array(2);
+			fortune[0] = 'every drop in the ocean counts';
+			fortune[1] = 'controversy is a part of the nature of art';
+			fortune[2] = 'our cells are speaking to each other';
+
+			index = Math.floor(Math.random() * fortune.length);
+			document.write(fortune[index]+"\n");
+		</script>
+		<noscript>どうしてこうなるんだろう…</noscript>
+	
+</p> -->
+<!--	</br> -->
+<!--	 -->
+<!--	</hr></br> -->
+<!--	 -->
+	<p>&copy; Spencer Poisseroux 2022</p>
+	
+	</br>
+	
+	<p>Follow me on: <a href="https://linkedin.com/in/spoisseroux">LinkedIn</a> & <a href="https://github.com/spoisseroux">Github</a><span class="u-separate"></span> Subscribe: <a href="//feed.xml">RSS</a></p>
+</footer>
+
+</article>
+
+        </main>
+        <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-154246167-1', 'auto');
+   ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
