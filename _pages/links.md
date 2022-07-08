@@ -10,7 +10,7 @@ permalink: /links/
 [[download]](https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf)
 -->
 
-<object data="/postAssets/resume/resume_7apr2022Software.pdf" width="80%" height="1000px" type='application/pdf'></object>
+<object data="/postAssets/resume/resume_7apr2022Software.pdf" width="100%" height="750px" type='application/pdf'></object>
 
 <!-- [[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
 [HackerRank](https://www.hackerrank.com/sp96651n),
