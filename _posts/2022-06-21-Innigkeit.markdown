@@ -36,4 +36,4 @@ date: 2022-06-21 19:48:10
 
 <img src="{{ "/postAssets/innigkeit/14.png" | prepend: site.baseurl | prepend: site.url}}" alt="14" />
 
-[download(3.64mb)](https://github.com/spoisseroux/spoisseroux.github.io/blob/master/postAssets/innigkeit/INNIGKEIT.pdf)
+[pdf(3.64mb)](https://spoisseroux.com/postAssets/innigkeit/INNIGKEIT.pdf)
