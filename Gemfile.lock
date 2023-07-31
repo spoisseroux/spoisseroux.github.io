@@ -226,10 +226,6 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.4)
     multipart-post (2.1.1)
-    no-style-please (0.4.5)
-      jekyll (~> 3.9.0)
-      jekyll-feed (~> 0.15.1)
-      jekyll-seo-tag (~> 2.7.1)
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -281,7 +277,7 @@ DEPENDENCIES
   github-pages
   jekyll-analytics
   jekyll-sitemap
-  no-style-please
+  jemoji
 
 BUNDLED WITH
    2.2.19
