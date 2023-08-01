@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Aug 2023 21:18:45 +0900</pubDate>
-    <lastBuildDate>Tue, 01 Aug 2023 21:18:45 +0900</lastBuildDate>
+    <pubDate>Tue, 01 Aug 2023 21:28:14 +0900</pubDate>
+    <lastBuildDate>Tue, 01 Aug 2023 21:28:14 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
-        <title>[Print] Butterfingers - zine</title>
+        <title>[Print] Butterfingers</title>
         <description>&lt;!-- HOW TO EMBED GITHUB IMAGES JEKYLL: https://stackoverflow.com/questions/69023928/github-pages-with-jekyll-not-showing-images-in-md-post --&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://spoisseroux.com/postAssets/butterfingers/butterfingers.pdf&quot;&gt;pdf(23.8mb)&lt;/a&gt;&lt;/p&gt;
@@ -54,7 +54,7 @@
       </item>
     
       <item>
-        <title>[Print] Innigkeit - zine</title>
+        <title>[Print] Innigkeit</title>
         <description>&lt;!-- HOW TO EMBED GITHUB IMAGES JEKYLL: https://stackoverflow.com/questions/69023928/github-pages-with-jekyll-not-showing-images-in-md-post --&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://spoisseroux.com/postAssets/innigkeit/INNIGKEIT.pdf&quot;&gt;pdf(3.64mb)&lt;/a&gt;&lt;/p&gt;

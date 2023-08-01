@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Print] Innigkeit - zine"
+title: "[Print] Innigkeit"
 date: 2022-06-21 19:48:10
 ---
 

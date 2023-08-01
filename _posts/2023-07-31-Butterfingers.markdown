@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Print] Butterfingers - zine"
+title: "[Print] Butterfingers"
 date: 2023-07-31 00:00:01
 ---
 
