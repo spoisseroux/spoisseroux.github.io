@@ -6,6 +6,8 @@ date: 2022-06-21 19:48:10
 
 <!-- HOW TO EMBED GITHUB IMAGES JEKYLL: https://stackoverflow.com/questions/69023928/github-pages-with-jekyll-not-showing-images-in-md-post -->
 
+[pdf(3.64mb)](https://spoisseroux.com/postAssets/innigkeit/INNIGKEIT.pdf)
+
 <img src="{{ "/postAssets/innigkeit/1.png" | prepend: site.baseurl | prepend: site.url}}" alt="1" />
 
 <img src="{{ "/postAssets/innigkeit/2.png" | prepend: site.baseurl | prepend: site.url}}" alt="2" />
@@ -36,4 +38,3 @@ date: 2022-06-21 19:48:10
 
 <img src="{{ "/postAssets/innigkeit/14.png" | prepend: site.baseurl | prepend: site.url}}" alt="14" />
 
-[pdf(3.64mb)](https://spoisseroux.com/postAssets/innigkeit/INNIGKEIT.pdf)
