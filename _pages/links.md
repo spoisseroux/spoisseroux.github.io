@@ -3,7 +3,6 @@ layout: page
 title: Resume
 permalink: /links/
 ---
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154246167-1"></script>
 <script>
@@ -13,17 +12,9 @@ permalink: /links/
 
   gtag('config', 'UA-154246167-1');
 </script>
-
-<!--
-<a href="https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf" download="SpencerPoisseroux"><img src="https://i.imgur.com/KueXsHz.png" /></a>
-
-[[download]](https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf)
--->
-
 <!-- 
 <object data="/postAssets/resume/resume_13July2023Software.pdf" width="100%" height="100%" type='application/pdf'></object>
 -->
-
 <html>
   <head>
     <meta charset="utf-8" />
