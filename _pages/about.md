@@ -17,7 +17,9 @@ permalink: /about/
 <!-- <img src="https://i.imgur.com/uC3nHFT.jpg" width="400"> -->
 <img src="/postAssets/aboutpics/1.jpg" width="400">
 
-**BSc in computer science, minor in digital & time-based art from pace university in new york, ny**
+**BSc Computer Science from**\
+**Pace Univerity, NYC**\
+Currently living in Tokyo
 
 <!-- **ニューヨークでペース大学のコンピュータ・サイエンス理学士四年生です。副専攻はデジタル・アートです。２０２１年５月に卒業します。日本で務めるとビザが必要です** -->
 
@@ -31,40 +33,27 @@ Film Photography,
 Principles of Design]
 -->
 
-**proficient in:　<!--（技術）: -->**
+**Proficiencies:　<!--（技術）: -->**
 [Python,
-Java,
-C,
-C#,
-C++,
 SQL,
-Javascript,
-HTML/CSS,
-Processing3,
-Assembly x86,
-Computer Architecture,
 Unity,
-Unreal,
-MAXmsp,
-Ableton Live 10,
-Logic Pro X,
 Blender,
+Ableton Live,
 InDesign,
 After Effects,
 Premiere Pro,
 Lightroom,
 Photoshop,
 Illustrator,
-Japanese]
+Substance,
+Sprite Animation,
+Software Development]
 
-**interested in:　<!--（興味）:-->**
-[Creative Coding,
-Audio Programming,
-Music Composition,
-Virtual Worlds,
-Game Development,
-AI,
-XR/AR/VR,
-Natural Language Processing,
+**Interests:　<!--（興味）:-->**
+[Game Development,
+Music Production,
+Asset Development,
+VRChat Content,
 Accessibility Technologies,
-Digital & Code based Art]
+Print Works,
+Backrooms]
