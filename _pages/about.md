@@ -14,7 +14,8 @@ permalink: /about/
   gtag('config', 'UA-154246167-1');
 </script>
 
-<img src="https://i.imgur.com/uC3nHFT.jpg" width="400">
+<!-- <img src="https://i.imgur.com/uC3nHFT.jpg" width="400"> -->
+<img src="/postAssets/aboutpics/1.jpg" width="400">
 
 **BSc in computer science, minor in digital & time-based art from pace university in new york, ny**
 
