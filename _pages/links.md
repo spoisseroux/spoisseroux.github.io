@@ -20,7 +20,19 @@ permalink: /links/
 [[download]](https://github.com/spoisseroux/spoisseroux.github.io/raw/master/SpencerPoisseroux_Resume.pdf)
 -->
 
-<object data="/postAssets/resume/resume_13July2023Software.pdf" width="90%" height="720px" type='application/pdf'></object>
+<!-- 
+<object data="/postAssets/resume/resume_13July2023Software.pdf" width="100%" height="100%" type='application/pdf'></object>
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <object data="/postAssets/resume/resume_13July2023Software.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+  </body>
+</html>
 
 <!-- [[LinkedIn](https://www.linkedin.com/in/spoisseroux/),
 [HackerRank](https://www.hackerrank.com/sp96651n),
