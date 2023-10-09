@@ -1,0 +1,43 @@
+---
+layout: post
+title: "[Unity] Nocturne: an adventure game"
+date: 2023-10-08 00:00:01
+---
+
+<!-- Banner -->
+
+<img src="{{ "/postAssets/nocturne/bannerFinish.png" | prepend: site.baseurl | prepend: site.url}}" alt="banner" />
+
+<!-- Description -->
+
+**Nocturne** is a short adventure game made in Unity with [bv52](https://corioj.github.io/).
+After receiving an odd message, a curious creature ventures to a forbidden land to investigate.
+
+Ableton: music, sound design
+Blender: 3D models, cutscenes
+Github: version control
+Photoshop: textures, sprites, UI
+Premiere Pro: cutscenes, trailer
+Notion: development tracking, story development
+
+<!-- Youtube trailer embed -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ys5km_uVVCQ?si=F0nlqYHhOg3TGvao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- ItchIo Game embed -->
+<iframe frameborder="0" src="https://itch.io/embed/2299425?border_width=2&amp;link_color=000000" width="554" height="169"><a href="https://keehar.itch.io/nocturne">Nocturne by keehar</a></iframe>
+
+<!-- Lighthouse Photo -->
+
+<img src="{{ "/postAssets/nocturne/lighthouseCrop.png" | prepend: site.baseurl | prepend: site.url}}" alt="gameplay1" />
+
+<!-- Spaceship Photo -->
+
+<img src="{{ "/postAssets/nocturne/spaceshipCrop.png" | prepend: site.baseurl | prepend: site.url}}" alt="gameplay2" />
+
+<!-- Blue level Photo -->
+
+<img src="{{ "/postAssets/nocturne/blueCrop.png" | prepend: site.baseurl | prepend: site.url}}" alt="gameplay3" />
+
+<!-- Credits Photo -->
+
+<img src="{{ "/postAssets/nocturne/creditsBigger.png" | prepend: site.baseurl | prepend: site.url}}" alt="credits" />
