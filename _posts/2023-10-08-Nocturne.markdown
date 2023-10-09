@@ -13,12 +13,12 @@ date: 2023-10-08 00:00:01
 **Nocturne** is a short adventure game made in Unity with [bv52](https://corioj.github.io/).
 After receiving an odd message, a curious creature ventures to a forbidden land to investigate.
 
-Ableton: music, sound design
-Blender: 3D models, cutscenes
-Github: version control
-Photoshop: textures, sprites, UI
-Premiere Pro: cutscenes, trailer
-Notion: development tracking, story development
+Ableton: music, sound design\
+Blender: 3D models, cutscenes\
+Github: version control\
+Photoshop: textures, sprites, UI\
+Premiere Pro: cutscenes, trailer\
+Notion: development tracking, story development\
 
 <!-- Youtube trailer embed -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ys5km_uVVCQ?si=F0nlqYHhOg3TGvao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
