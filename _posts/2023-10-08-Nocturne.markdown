@@ -18,7 +18,7 @@ Blender: 3D models, cutscenes\
 Github: version control\
 Photoshop: textures, sprites, UI\
 Premiere Pro: cutscenes, trailer\
-Notion: development tracking, story development\
+Notion: development tracking, story development
 
 <!-- Youtube trailer embed -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ys5km_uVVCQ?si=F0nlqYHhOg3TGvao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
