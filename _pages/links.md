@@ -21,7 +21,7 @@ permalink: /links/
         <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <object data="/postAssets/resume/resume_13July2023Software.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+    <object data="/postAssets/resume/Poisseroux_Oct2023.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
   </body>
 </html>
 
